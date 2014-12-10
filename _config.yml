@@ -2,7 +2,7 @@
 title: Brick
 email: alfrethyan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  brickpm.com是我的个人博客系统，基于gitgub和jekyll搭建，希望通过最简单的方式来记录我的工作和学习，并分享自己的心得体会。
+  brickpm.com是我的个人博客，基于gitgub和jekyll搭建，希望通过最简单的方式来记录我的工作和学习，并分享自己的心得体会。
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://brickpm.com" # the base hostname & protocol for your site
 twitter_username: alfrethyan
