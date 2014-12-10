@@ -1,14 +1,12 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Brick
+email: alfrethyan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  brickpm.com是我的个人博客系统，基于gitgub和jekyll搭建，希望通过最简单的方式来记录我的工作和学习，并分享自己的心得体会。
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://brickpm.com" # the base hostname & protocol for your site
+twitter_username: johnchoi
+github_username:  johnchoi
 
 # Build settings
 markdown: kramdown
