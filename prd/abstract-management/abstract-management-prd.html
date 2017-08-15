@@ -1,0 +1,2369 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title># 征文摘要管理产品需求文档</title>
+<style>
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+body {
+  background-color: white;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;;word-wrap: break-word; word-break: break-all;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+table td{ word-wrap: break-word !important; word-break: break-all !important; }
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rule .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.hljs-name {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">征文摘要管理产品需求文档</h1>
+
+<table>
+<thead>
+<tr>
+<th>文件编号</th>
+<th>作者</th>
+<th>文档版本</th>
+<th>最后修改日期</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.0</td>
+<td>2017/6/3</td>
+</tr>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.1</td>
+<td>2017/6/27</td>
+</tr>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.2</td>
+<td>2017/7/3</td>
+</tr>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.3</td>
+<td>2017/7/10</td>
+</tr>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.4</td>
+<td>2017/8/15</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>当前版本号：V1.0.4</strong></p>
+
+<p><strong>修订控制</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>文档版本</th>
+<th>修订章节</th>
+<th>修订原因</th>
+<th>修订日期</th>
+<th>修订人</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>V1.0.0</td>
+<td></td>
+<td>创建</td>
+<td>2017/6/3</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>2</td>
+<td>V1.0.1</td>
+<td>2.2.1.1<br>2.2.3.3</td>
+<td>修改</td>
+<td>添加开启学术会议功能；<br>添加修改帐号信息功能;</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>3</td>
+<td>V1.0.2</td>
+<td>2.2.6</td>
+<td>新增</td>
+<td>新增征文通知设置相关说明</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>4</td>
+<td>V1.0.3</td>
+<td>2.2.1.4</td>
+<td>修改</td>
+<td>摘要提交形式设置</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>5</td>
+<td>V1.0.4</td>
+<td>2.2.4.1</td>
+<td>新增</td>
+<td>新增后台摘要下载功能</td>
+<td>周勤</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>目录</strong></p>
+
+<ul>
+<li>
+<a href="#toc_0">征文摘要管理产品需求文档</a>
+<ul>
+<li>
+<a href="#toc_1">1. 概述</a>
+<ul>
+<li>
+<a href="#toc_2">1.1 名词说明</a>
+</li>
+<li>
+<a href="#toc_3">1.2 产品概述及目的</a>
+<ul>
+<li>
+<a href="#toc_4">1.2.1 产品概述</a>
+</li>
+<li>
+<a href="#toc_5">1.2.2 产品目的</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">1.3 产品风险</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_7">2. 功能需求</a>
+<ul>
+<li>
+<a href="#toc_8">2.1 功能总览</a>
+</li>
+<li>
+<a href="#toc_9">2.2 功能详情</a>
+<ul>
+<li>
+<a href="#toc_10">2.2.1 摘要提交设置</a>
+<ul>
+<li>
+<a href="#toc_11">2.2.1.1 启用学术会议</a>
+</li>
+<li>
+<a href="#toc_12">2.2.1.2 启用摘要提交</a>
+</li>
+<li>
+<a href="#toc_13">2.2.1.3 摘要提交时间范围</a>
+</li>
+<li>
+<a href="#toc_14">2.2.1.4 摘要提交形式</a>
+</li>
+<li>
+<a href="#toc_15">2.2.1.5 是否需要填写作者</a>
+</li>
+<li>
+<a href="#toc_16">2.2.1.6 是否需要填写关键字</a>
+</li>
+<li>
+<a href="#toc_17">2.2.1.7 征文提交须知</a>
+</li>
+<li>
+<a href="#toc_18">2.2.1.8 学科分类</a>
+</li>
+<li>
+<a href="#toc_19">2.2.1.1.9 期望发表类型</a>
+</li>
+<li>
+<a href="#toc_20">2.2.1.10 自动生成摘要序号</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_21">2.2.2 摘要评审设置</a>
+<ul>
+<li>
+<a href="#toc_22">2.2.2.1 处理方式设置</a>
+</li>
+<li>
+<a href="#toc_23">2.2.2.2 评审意见设置</a>
+</li>
+<li>
+<a href="#toc_24">2.2.2.3 最终评审</a>
+</li>
+<li>
+<a href="#toc_25">2.2.2.4 任务接受时间</a>
+</li>
+<li>
+<a href="#toc_26">2.2.2.5 任务评审时间</a>
+</li>
+<li>
+<a href="#toc_27">2.2.2.6 摘要修改时间</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_28">2.2.3 摘要提交</a>
+<ul>
+<li>
+<a href="#toc_29">2.2.3.1 添加“重要日期”模块</a>
+</li>
+<li>
+<a href="#toc_30">2.2.3.2 注册登录功能（联系人）</a>
+</li>
+<li>
+<a href="#toc_31">2.2.3.3 修改个人信息（联系人）</a>
+</li>
+<li>
+<a href="#toc_32">2.2.3.4 个人中心嵌入报名表单，包含门票字段</a>
+</li>
+<li>
+<a href="#toc_33">2.2.3.5 个人中心查看订单并付款</a>
+</li>
+<li>
+<a href="#toc_34">2.2.3.6 发票功能</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_35">2.2.4 摘要后台管理</a>
+<ul>
+<li>
+<a href="#toc_36">2.2.4.1 征文列表和编辑征文</a>
+</li>
+<li>
+<a href="#toc_37">2.2.4.2 分配评审</a>
+</li>
+<li>
+<a href="#toc_38">2.2.4.3 评审任务列表</a>
+</li>
+<li>
+<a href="#toc_39">2.2.4.4 评审专家列表/增删查改操作</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_40">2.2.5 评审专家个人中心</a>
+<ul>
+<li>
+<a href="#toc_41">2.2.5.1 评审专家登录</a>
+</li>
+<li>
+<a href="#toc_42">2.2.5.2 待接受任务列表</a>
+</li>
+<li>
+<a href="#toc_43">2.2.5.3 未评审摘要列表</a>
+</li>
+<li>
+<a href="#toc_44">2.2.5.4 已评审摘要列表</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_45">2.2.6 征文提醒设置</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_46">3. 常见问题</a>
+<ul>
+<li>
+<a href="#toc_47">3.1 问题一：勾选行中包括了有任务的专家（备注：已经被分配任务的专家无法删除）以及没有任务的专家，那么点击批量删除后，结果如何？</a>
+</li>
+<li>
+<a href="#toc_48">3.2 问题二：征文列表中的“已修改”是按钮还是标签？</a>
+</li>
+<li>
+<a href="#toc_49">3.3 问题三：征文列表中每个选项卡中对应的操作具体是如何对应的？比如点击已评审，是否只有最终评审和归档呢？</a>
+</li>
+<li>
+<a href="#toc_50">3.4 征文序号必须生成</a>
+</li>
+<li>
+<a href="#toc_51">3.5 学科分类只支持单选</a>
+</li>
+<li>
+<a href="#toc_52">3.6 专家登录</a>
+</li>
+<li>
+<a href="#toc_53">3.7 作者个人中心菜单</a>
+</li>
+<li>
+<a href="#toc_54">3.8 摘要提交后，“已通过”、“需修改”状态下需要显示“评审结果”</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 id="toc_1">1. 概述</h2>
+
+<h3 id="toc_2">1.1 名词说明</h3>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>摘要(Abstract)</td>
+<td>摘要通常在正式报告前几个月就要写好，摘要可以帮助作者取舍报告的内容。主办方（评审委员）通过摘要评审来决定是否需要选择该作者作为会议的演讲者、或者在摘要集中为作者的工作进行宣传和吸引人们来参加作者的讨论或观看电子壁报。因此，一般来说，摘要应该有坚实且令人兴奋的结果，但还要给人说明作者从事的研究工作是动态的、仍在进行的，读过摘要的人只有通过听取报告才能够明白你研究的内容。在学术会议中，摘要的第一位读者就是会议论文的评审委员会</td>
+</tr>
+<tr>
+<td>通讯作者(Corresponding Author)</td>
+<td>通讯作者往往是课题的总负责人，承担课题的经费，设计，文章的书写和把关。也是文章/摘要和研究材料的联系人。最重要的是，他担负着文章可靠性的责任。需要负责与主办方（评审委员会）的一切通信联系和接受读者的咨询等。实际上如果从知识产权上来说，研究成果算是通讯作者的。通讯作者的好处是能和外界建立更广泛的联系。通讯作者通常由论文所属领域内最有权威者担当。</td>
+</tr>
+<tr>
+<td>第一作者(First Author)</td>
+<td>必须是第一线操作的实施者和原始数据的收集和处理人，又是初稿的执笔人，第一作者要对研究结果和数据真实性负首要责任，第一作者的署名通常排在最前面。</td>
+</tr>
+<tr>
+<td>联合作者(Co-Author)</td>
+<td>对作品有一定直接或间接帮助的贡献人，在总体贡献上跟第一作者有较大差距，统称为联合作者</td>
+</tr>
+<tr>
+<td>主办方(Organizer)</td>
+<td>学术会议的发起人</td>
+</tr>
+<tr>
+<td>大会主席(Conference chair)</td>
+<td>以公正的立场围绕会议主题，主持并引导协调会议的人</td>
+</tr>
+<tr>
+<td>评审委员会(Selection Committee)</td>
+<td>由评审专家组成的摘要评审组织</td>
+</tr>
+<tr>
+<td>评审专家(Reviewer)</td>
+<td>对摘要进行评审的某领域的专家</td>
+</tr>
+<tr>
+<td>评审任务(Review quest)</td>
+<td>由评审委员会或主办方将摘要分配给评审专家而产生的任务</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_3">1.2 产品概述及目的</h3>
+
+<h4 id="toc_4">1.2.1 产品概述</h4>
+
+<p>征文摘要管理系统主要目的是为了给学术会议接受和准备演讲摘要使用，通常在会议开始前几个月，会议主办方或评审委员会需要收集学者在最近一段时间内的工作成果摘要或说明。摘要基本上说明了某种假设，研究使用的工具，收集的数据以及对这些数据的基本理解。</p>
+
+<p>大会主席或评审委员会可以选择接受或拒绝这些摘要，被接受的摘要将会被安排到会议日程中，作为口头演讲或者电子壁报。摘要通常也会在会议之前或之后，被整理成会议记录、学术日志、摘要集或在线发布（目前尚未处理）。</p>
+
+<h4 id="toc_5">1.2.2 产品目的</h4>
+
+<p>征文摘要管理系统包含了摘要提交设置、摘要提交、摘要管理以及摘要评审等四大部分，操作人涉及到后台管理员、作者以及评审专家等多种不同的身份。</p>
+
+<p>征文摘要管理系统使得这些学术会议中的三种不同身份的角色能够使用系统进行无缝合作，使学术会议主办方在收集、管理、评审摘要时更加高效快捷。</p>
+
+<p>第一期产品的目的包括：收集摘要、分配评审任务、获取最终评审结果。</p>
+
+<p>第一期产品不包含的内容有：将摘要制作成摘要集、会议记录或学术日志。</p>
+
+<h3 id="toc_6">1.3 产品风险</h3>
+
+<p>风险级别说明：非常高的，高的，适度的，低的，非常低的</p>
+
+<table>
+<thead>
+<tr>
+<th>风险</th>
+<th>风险级别</th>
+<th>描述</th>
+<th>监控策略</th>
+<th>改善策略</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>与原有报名流程有一定的区别</td>
+<td>适度的</td>
+<td>学术会议的注册报名流程与原有会议的报名流程有所不同，一般来说需要参会人先注册后报名，参会人提交某一部分信息后有可能经过很长一段时间后才会报名付款或提交征文，所以需要改造目前的报名流程，可能会存在一定的流程无法完全适配的情形</td>
+<td>需要通过服务一两场学术会议来了解具体的流程</td>
+<td>跟踪获得数据后，需要根据实际情况不断的调整，使之更适合学术会议</td>
+</tr>
+<tr>
+<td>对于学术会议不够了解，可能导致系统不完全满足某些学术会议的需求</td>
+<td>高的</td>
+<td>由于产品及开发都对学术会议不够了解，对于某些细节，只能通过从竞品或网上的资料获得的信息进行主观判断，可能会导致某些需求理解上有偏差，无法完全满足需求</td>
+<td>需要通过服务一两场学术会议来了解具体的流程</td>
+<td>需要获得真实会议反馈后，重新理解需求</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_7">2. 功能需求</h2>
+
+<h3 id="toc_8">2.1 功能总览</h3>
+
+<p><strong>征文摘要管理系统基本模块 - 功能总表</strong></p>
+
+<p>优先级说明：</p>
+
+<ul>
+<li>P1: 优先级最高，必须完成</li>
+<li>P2: 中等优先级，碰到无法解决的问题时可以延后</li>
+<li>P3: 优先级低，在工期紧张时可以延后</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+<th>优先级</th>
+<th>备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1. 摘要提交设置</td>
+<td>启用学术会议</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>启用摘要提交</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>摘要提交时间范围</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>摘要提交形式：文本或文件</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>填写作者</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>填写关键字</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>征文提交须知(中英文)</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>学科分类（中英文）</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>期望发表类型（中英文）</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>征文序号功能</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td>2. 征文评审设置</td>
+<td>处理方式设置（中英文）</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>评审意见设置</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>是否需要最终评审</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>任务接受时间和任务完成时间设置</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td>3. 摘要提交</td>
+<td>添加“重要日期”模块</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>注册登录功能（联系人）</td>
+<td>已完成</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改个人信息（联系人）</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>个人中心嵌入报名表单，包含门票字段</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>个人中心查看订单并付款</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>发票功能</td>
+<td>已完成</td>
+<td></td>
+</tr>
+<tr>
+<td>4. 摘要后台管理</td>
+<td>征文列表</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>分配评审</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>查看评审任务</td>
+<td>P2</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>评审专家列表</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>添加或导入评审专家</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td>5. 评审摘要</td>
+<td>评审专家登录</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>待接受任务列表</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>待评审任务列表</td>
+<td>P1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>已评审任务列表</td>
+<td>P1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>征文设置模型</strong></p>
+
+<p><img src="media/14964703791779/%E8%AE%BA%E6%96%87%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9E%8B.png" alt="论文管理模型"/>￼</p>
+
+<h3 id="toc_9">2.2 功能详情</h3>
+
+<h4 id="toc_10">2.2.1 摘要提交设置</h4>
+
+<h5 id="toc_11">2.2.1.1 启用学术会议</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>征文摘要管理需要在启用学术会议后方能使用，启用学术会议后，将使用学术会议专有的报名流程。见图0：</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>启用学术会议后，显示下方的提交设置和摘要评审设置</li>
+<li>启用学术会议后，则只能使用学术会议专有的报名流程</li>
+<li>学术会议报名流程：见图1</li>
+<li>&quot;启用学术会议&quot;功能属于专业版功能，需要开通专业版后方能使用</li>
+<li>点击开启学术会议时，如果当前会议不是专业版，则跳转到版本升级页面，提示用户升级：见图2</li>
+</ol>
+
+<p>图0：开启学术会议<br/>
+<img src="media/14964703791779/14985319317765.jpg" alt=""/>￼</p>
+
+<p>图1：学术会议报名流程<br/>
+<img src="media/14964703791779/14972370588210.jpg" alt=""/>￼</p>
+
+<p>图2：提示升级<br/>
+<img src="media/14964703791779/14972378532118.jpg" alt=""/>￼</p>
+
+<h5 id="toc_12">2.2.1.2 启用摘要提交</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>启用摘要提交后，参会人/作者登录个人中心后，才能够看到提交摘要菜单</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>如果未启用摘要提交，则参会人/作者在个人中心中无法看到提交摘要的菜单</li>
+<li>如果已启用摘要提交，则参会人/作者在个人中心中可以看到提交摘要的菜单</li>
+<li>&quot;启用摘要提交&quot;功能属于专业版功能，需要开通专业版后方能使用</li>
+<li>如果当前会议不是专业版，则无法开启“启用学术会议”，也就无法看到“启用摘要提交”设置项，但是在“启用摘要提交”的地方需要再做一次判断，确保逻辑正确</li>
+</ol>
+
+<h5 id="toc_13">2.2.1.3 摘要提交时间范围</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>设置摘要提交的开始和结束时间，在当前时间超出该时间段（之前或之后）时，无法创建或修改摘要提交，需修改状态下的摘要重新提交不受该时间段限制。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>征文提交开始时间：任何时间皆可；结束时间：晚于开始时间；开始和结束时间为必填项，不能为空</li>
+<li>当前时间在摘要提交时间范围之前，提示“摘要提交尚未开始，摘要提交时间：2017-04-02 09:12 至 2015-05-02 09:12”，见图3</li>
+<li>当前时间在摘要提交时间范围之后，提示“摘要提交已截止，无法继续提交”，见图4</li>
+<li>已提交过摘要的作者，如果当前时间在提交时间范围之后，在摘要显示列表中，禁用重新提交按钮，鼠标经过时提示“摘要提交已截止，无法重新提交”，见图5</li>
+<li>当摘要已被评审专家或最终评审标记为“需修改”状态时，不在该时间范围内也能够重新提交</li>
+<li>默认值为空</li>
+</ol>
+
+<p>图3：摘要提交尚未开始<br/>
+<img src="media/14964703791779/14972499894518.jpg" alt=""/>￼</p>
+
+<p>图4：摘要提交已截止<br/>
+<img src="media/14964703791779/14972500028610.jpg" alt=""/>￼</p>
+
+<p>图5：已提交摘要后，过截止时间<br/>
+<img src="media/14964703791779/14972499669235.jpg" alt=""/>￼</p>
+
+<h5 id="toc_14">2.2.1.4 摘要提交形式</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>摘要提交形式主要控制前台用户提交摘要的方式，可支持“在线编辑富文本”以及“上传文件”两种方式，两种方式在后台可同时勾选，当同时勾选时，则提交摘要时可以选择使用任一提交方式</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认勾选“上传文件”，不勾选“在线编辑富文本”</li>
+<li>使用“在线编辑富文本”时，可设置字数限制（默认为3000），英文/中文均算一个字数，超出数量限制时，需要给出超限制提示：见图6</li>
+<li>使用“上传文件”时，可设置能够支持的上传格式，目前可支持doc/docx三种格式的文件，并可设置文件大小限制，如文件格式不正确，提示：“上传格式错误，仅上传doc/docx/pdf格式的文件”，其中“doc/docx”这三种格式需要根据后台配置变化；如文件大小超出限制，提示：“文件大小超出限制，仅支持上传不超过100M的文件”，其中“100M”根据后台配置变化，见图6</li>
+<li>勾选状态下，显示后面的设置项，不勾选则不显示 见图6：摘要提交形式设置</li>
+</ol>
+
+<p>图6：在线编辑富文本错误提示和字数提示 <br/>
+<img src="media/14964703791779/14972621376733.jpg" alt=""/>￼</p>
+
+<p>图6：摘要提交形式设置<br/>
+<img src="media/14964703791779/14996565062745.jpg" alt=""/>￼</p>
+
+<h5 id="toc_15">2.2.1.5 是否需要填写作者</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>控制提交时是否需要填写作者表单，如果未勾选，则不需要填写任何作者信息</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认勾选</li>
+<li>勾选后需要填写“通讯作者”、“第一作者”、“共同作者”信息，作者字段暂时固定，后期需要可扩展，作者字段见表1</li>
+</ol>
+
+<p>表1：作者字段表</p>
+
+<table>
+<thead>
+<tr>
+<th>通讯作者</th>
+<th>第一作者</th>
+<th>共同作者</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>名/Last name</td>
+<td>名/Last name</td>
+<td>名/Last name</td>
+</tr>
+<tr>
+<td>姓/First name</td>
+<td>姓/First name</td>
+<td>姓/First name</td>
+</tr>
+<tr>
+<td>性别/Gender</td>
+<td>性别/Gender</td>
+<td></td>
+</tr>
+<tr>
+<td>邮箱/Email Address</td>
+<td>邮箱/Email Address</td>
+<td>邮箱/Email Address</td>
+</tr>
+<tr>
+<td>手机/Mobile Number</td>
+<td>手机/Mobile Number</td>
+<td></td>
+</tr>
+<tr>
+<td>邮寄地址/Mailing address</td>
+<td>邮寄地址/Mailing address</td>
+<td></td>
+</tr>
+<tr>
+<td>职位/Position</td>
+<td>职位/Position</td>
+<td></td>
+</tr>
+<tr>
+<td>组织或公司/Organization or Company</td>
+<td>组织或公司/Organization or Company</td>
+<td>组织或公司/Organization or Company</td>
+</tr>
+<tr>
+<td>邮编/Postal</td>
+<td>邮编/Postal</td>
+<td></td>
+</tr>
+<tr>
+<td>传真号码/Fax number</td>
+<td>传真号码/Fax number</td>
+<td></td>
+</tr>
+<tr>
+<td>备注/Note</td>
+<td>备注/Note</td>
+<td></td>
+</tr>
+<tr>
+<td>办公室号码/Office Number</td>
+<td>办公室号码/Office Number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="toc_16">2.2.1.6 是否需要填写关键字</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>控制提交摘要时是否需要填写摘要关键字</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认勾选</li>
+<li>勾选后提交时则需填写摘要“关键字”信息</li>
+<li>后台管理可使用关键字查询摘要</li>
+<li>摘要填写时以英文逗号分割</li>
+</ol>
+
+<h5 id="toc_17">2.2.1.7 征文提交须知</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>征文提交须知控制在前台提交时显示提交须知，分为中英文，使用语言参数作为中英文控制</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认为空，当值为空时，前台不显示征文提交须知，有值时则显示提交须知，见图7</li>
+</ol>
+
+<p>图7：征文提交须知<br/>
+<img src="media/14964703791779/14972661860122.jpg" alt=""/>￼</p>
+
+<h5 id="toc_18">2.2.1.8 学科分类</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>设置作者在提交摘要时可选择的学科分类，作者在提交摘要时，必须选择其中的一个分类作为主题。我们会预设一整套学科分类，数据将从教育部数据库中获取。主办方可从预设的数据库中添加分类或自定义。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>左侧穿梭框内为我们提交预设好的学科分类数据，最多为3级结构，分为中英文双语，且每个学科分类带有分类标识，用于生成征文序号</li>
+<li>左侧框内可以进行学科分类搜索，搜索时会显示包含该关键字的所有层级，如第一级包含“关键字”，则显示该级下所有分类；如第二级包含“关键字”，则显示其上一级分类、包含关键字本身的二级分类以及其下所有三级分类；如第三级包含“关键字”，则显示其本身以及二级和一级分类。</li>
+<li>左侧框内的数据无法编辑</li>
+<li>右侧穿梭框内为已选择的学科分类，选择逻辑与搜索相同。即：选择第一级，将该级下所有分类都移到右侧；选择二级分类，将其上一级分类以及其下所有三级分类移到右侧；选择三级分类，则将其本身以及以所属的二级和三级分类移到右侧。</li>
+<li>右侧搜索逻辑与左侧相同</li>
+<li>右侧所有数据可以自定义，重命名时可以输入中文名、英文名以及编号，见图8</li>
+<li>右侧无分类时，需要有新建分类按钮，见图9</li>
+<li>一级、二级分类下，可以新建同级和下级分类，三级分类下仅能新建同级分类</li>
+<li>删除一级分类，则会同时删除其下所有分类数据，二级分类也一样</li>
+<li>选择：可使用shift键进行多选</li>
+<li>择中某些分类后，可使用右侧箭头上移下级以及升级和降级</li>
+<li>点击编辑说明跳转到docs站点的说明文章，使用新窗口打开，链接后面再补上</li>
+<li>所有数据需要点击“保存设置”后方可生效</li>
+<li>学科分类语言设置：设置中英文对照后，无论中文或英文通道，学科分类都以双语显示，显示方式为三级下拉菜单（级联菜单以实际层级为准）</li>
+<li>设置中英文分别显示后，中文会议下显示中文，英文会议下显示英文，取决与个人中心或者注册登录的入口的语言参数。</li>
+</ol>
+
+<p>图8：编辑分类<br/>
+<img src="media/14964703791779/14973317795638.jpg" alt=""/>￼</p>
+
+<p>图9：右侧框无分类时<br/>
+<img src="media/14964703791779/14973318325257.jpg" alt=""/>￼</p>
+
+<h5 id="toc_19">2.2.1.1.9 期望发表类型</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>期望发表类型为作者提交该摘要的目的，如口头报告，电子壁报，病例报告等等。添加好的期望发表类型在提交征文时供作者选择。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认值有“口头演讲/Oral Presentation”、“壁报交流/Poster Presentation”</li>
+<li>显示方式：中英文以&quot;/&quot;分割，如：口头演讲/Oral Presentation</li>
+<li>添加或编辑时需要分类”中文“和”英文“两个输入框，模态窗口标题根据添加或编辑文字需要不一样，添加时显示”添加类型“，编辑时显示”编辑类型“，中文或英文其中之一可以为空（二选一），见图10</li>
+<li>可删除</li>
+</ol>
+
+<p>图10：添加类型<br/>
+<img src="media/14964703791779/14973344487591.jpg" alt=""/>￼</p>
+
+<h5 id="toc_20">2.2.1.10 自动生成摘要序号</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>摘要序号主要用于做为摘要的唯一标识，在编辑摘要集或生成电子壁报时会使用到该序号</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>勾选后，任何提交的摘要都会自动按照学科分类和序号生成摘要序号，格式为[一级分类编号][二级分类编号][三级分类编号]-[提交序列号]，如ABC-0001,提交序列号为自增序列,默认为4位，可超过4位，如10001</li>
+<li>分类如果只存在二级或一级，没有的级别则自动留空，如：AB-0002</li>
+<li>如果不存在学科分类，则只使用提交序列号做为摘要序号，如：0003</li>
+</ol>
+
+<h4 id="toc_21">2.2.2 摘要评审设置</h4>
+
+<h5 id="toc_22">2.2.2.1 处理方式设置</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>处理方式是提供给评审专家选择的文案，分为”通过“、”拒绝“、”修改“三种方案，可以设置表示这三种方案的文案，如表示”通过“的文案可设置为”同意接收“，表示”修改“的文案可设置为”大幅修改“、”小幅修改“等等。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>共有”通过“、”拒绝“、”修改“三种处理方式，每种处理方式可使用不同的处理文案</li>
+<li>评审专家评审时可以选择不同的处理方案，便于理解</li>
+<li>显示时使用”同意接收/Accept“格式</li>
+<li>编辑删除样式，见图11</li>
+</ol>
+
+<p>图11，编辑删除样式<br/>
+<img src="media/14964703791779/14973367131076.jpg" alt=""/>￼</p>
+
+<h5 id="toc_23">2.2.2.2 评审意见设置</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>可设置是否需要评审专家填写评审意见，可设为”必填“、”选填“、”无须填写“，设置后，在评审时根据对应的设置显示或隐藏”评审意见“输入框</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>选择”必填“时，显示输入框，且不能为空</li>
+<li>选择”选填“时，显示输入框，但可以为空</li>
+<li>选择”无须填写“时，不显示输入框</li>
+</ol>
+
+<h5 id="toc_24">2.2.2.3 最终评审</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>可开启或关闭，控制是否需要经过主办方/评审委员会进行最后的筛选或者是直接使用评审专家的建议的处理方式</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>关闭最终评审时，直接使用评审专家的处理建议，即评审专家评审后即为最终评审</li>
+<li>开启最终评审时，在评审专家评审后，还需要使用后台再进行一次评审处理，处理表单与评审专家一样</li>
+</ol>
+
+<h5 id="toc_25">2.2.2.4 任务接受时间</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>控制任务创建后，某段时间内如果未接受则自动退回</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>以”天“为单位，当截止时间到时，任务未被评审专家接受则自动退回</li>
+<li>可以在任务列表中延长某个任务的接受时间</li>
+<li>默认开启</li>
+</ol>
+
+<h5 id="toc_26">2.2.2.5 任务评审时间</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>控制任务接受后，某段时间内如果未被评审完成，任务将自动退回</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>以”天“为单位，当截止时间到时，任务未被评审专家评审则自动退回</li>
+<li>可以在任务列表中延长某个任务的接受时间</li>
+<li>当任务已被评审过，且处于需修改状态，任务时间在作者重新提交摘要后重新计算</li>
+<li>默认开启</li>
+</ol>
+
+<h5 id="toc_27">2.2.2.6 摘要修改时间</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>控制任务被设为需修改后，作者修改并重新提交征文的时间</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>以”天“单位，以评审专家将任务设为”需修改“状态时开始计算</li>
+<li>如果作者未能及时重新提交摘要，将征文设为”已拒绝“状态</li>
+<li>默认不开启</li>
+</ol>
+
+<h4 id="toc_28">2.2.3 摘要提交</h4>
+
+<h5 id="toc_29">2.2.3.1 添加“重要日期”模块</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>在会议网站，添加”重要日期“模块，用于提示用户几个重要的日期</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>可显示两种重要时间的显示：摘要提交截止时间和注册报名截止时间</li>
+<li>摘要提交截止时间：可设置提示文字和选择日期格式</li>
+<li>注册截止日期：可设置提示文字、票种截止时间以及格式，可选择通道和票种，见图12</li>
+<li>样式：中英文，见图13</li>
+</ol>
+
+<p>图12：添加/编辑”重要日期模块“<br/>
+<img src="media/14964703791779/14973386500862.jpg" alt=""/>￼</p>
+
+<p>图13：重要日期模块样式<br/>
+<img src="media/14964703791779/14973386977201.jpg" alt=""/>￼</p>
+
+<h5 id="toc_30">2.2.3.2 注册登录功能（联系人）</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>报名前先注册/登录后报名的流程</p>
+
+<h5 id="toc_31">2.2.3.3 修改个人信息（联系人）</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>在个人中心中可修改联系人信息</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>所有字段均可以修改，见图21</li>
+<li>密码修改功能需要另开一个页面，见图22</li>
+</ol>
+
+<p>图21：修改参会人信息<br/>
+<img src="media/14964703791779/14985321525918.jpg" alt=""/>￼</p>
+
+<p>图22：修改密码<br/>
+<img src="media/14964703791779/14985321735836.jpg" alt=""/>￼</p>
+
+<h5 id="toc_32">2.2.3.4 个人中心嵌入报名表单，包含门票字段</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>个人中心可嵌入报名流程，使用当前的报名流程嵌入</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>将现有的报名流程放入个人中心，在个人中心点击左侧的注册报名时，按照报名表单设计器中的流程处理</li>
+<li>提交订单后返回到个人中心的“付款”页面，见图20</li>
+</ol>
+
+<p>图20：付款页面<br/>
+<img src="media/14964703791779/14984471771077.jpg" alt=""/>￼</p>
+
+<h5 id="toc_33">2.2.3.5 个人中心查看订单并付款</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>提交报名信息生成订单或摘要通过审核后，会生成相关的订单，在左侧”付款“菜单中会显示当前的订单列表，如果订单处理未付款状态，可以单独付款或合并付款</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>未付款的订单会在左侧显示提示，见图14</li>
+<li>右侧订单列表可单独付款也可以合并付款，付款走标准pay站点流程</li>
+</ol>
+
+<p>图14：未付款订单提示<br/>
+<img src="media/14964703791779/14973399039337.jpg" alt=""/>￼</p>
+
+<h5 id="toc_34">2.2.3.6 发票功能</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>按订单提供发票信息填写功能（已完成）</p>
+
+<h4 id="toc_35">2.2.4 摘要后台管理</h4>
+
+<h5 id="toc_36">2.2.4.1 征文列表和编辑征文</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>摘要列表是征文收集后的管理列表，用于管理摘要、分配摘要评审任务等工作</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>征文共分为”待分配“、”待接受“、”待评审“、”已评审“、“已退回”、“已最终评审”等六个状态</li>
+<li>“已评审”、“已最终评审”中又分为“已通过”、“已拒绝”、“需修改”三种不同的子状态</li>
+<li>摘要可以编辑、删除或查看任务</li>
+<li>编辑摘要，点击作者后往下展开编辑作者表单，见图15、图16</li>
+<li>文件形式编辑时，可以重新上传摘要文件，格式与后台设置的格式相同，需要使用网页端查看文档的插件</li>
+<li>任何状态下的征文都可以删除，删除时需要二次提示，并且会同时删除相关的任务</li>
+<li>简单搜索：可使用标题/序号/作者进行简单搜索</li>
+<li>高级搜索：可使用“状态”、“征文主题/类型”、“提交时间”、“任务分配时间”、“任务接受时间”、“任务完成时间”、“最终评审时间”来进行高级搜索</li>
+<li>下载全部：无论有没有选中论文摘要，下载全部功能均可以点击，点击后将所有征文打包（压缩：.zip格式）下载，下载格式为用户上传的格式。<strong>V1.0.4（新增）</strong></li>
+<li>下载所选：当选中了某一篇或几篇论文摘要时，出现“下载所选”按钮，注：选中后才显示，与删除按钮一样。点击后将选中的征文打包（压缩：.zip格式）下载，不论选中论文摘要的篇数，如只选中了一篇，也一样打包下载。 <strong>V1.0.4（新增）</strong></li>
+<li>如果作者在提交征文时选择的是“富文本”方式进行提交的，则无法下载。“下载全部”时，不将富文本方式的征文摘要打包，如果所有的征文摘要都是富文本方式提交的，则不显示“下载全部”功能按钮。如果选中的征文摘要中仅包含“富文本”方式提交的征文摘要，则不显示“下载所选”功能按钮。如果选中的征文摘要中即包含“富文本”提交的摘要，也包含“文件上传”方式提交的摘要，则仅将“文件上传”方式提交的摘要进行打包下载即可。 <strong>V1.0.4（新增）</strong></li>
+</ol>
+
+<p><strong>V1.0.4（新增）论文摘要下载功能</strong><br/>
+<img src="media/14964703791779/15027672890498.jpg" alt=""/>￼</p>
+
+<p>图15：编辑摘要内容，富文本形式<br/>
+<img src="media/14964703791779/14973425696832.jpg" alt=""/>￼</p>
+
+<p>图16：编辑摘要内容，文件形式<br/>
+<img src="media/14964703791779/14973427704598.jpg" alt=""/>￼</p>
+
+<h5 id="toc_37">2.2.4.2 分配评审</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>分配评审功能用于将摘要分配给某个评审专家进行评审</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>目前仅支持将一篇摘要分配个一个专家</li>
+<li>分配时可以使用学科分类进行筛选</li>
+<li>选择的评审专家可以查看当前的任务状态，“待接收”、“待评审”、“已评审”数据</li>
+<li>点击单条记录进行分配时，将按照当前摘要的学科分类自动匹配相同学科的专家</li>
+</ol>
+
+<h5 id="toc_38">2.2.4.3 评审任务列表</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>评审任务列表用于查看当前已分配给评审专家的任务信息</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>任务属性集合，如当前任务下的属性值为空，则不显示该条数据。见图17</li>
+<li>任务处于待接受时，有任务接受截止时间、任务编号、征文序号等属性，评审意见为空时，</li>
+<li>任务处于待评审时，有评审截止时间、任务编号、征文序号</li>
+<li>任务处于拒绝、通过、修改状态时，有“处理意见”、“处理时间”、”任务编号“、”征文序号“、”评审意见“；评审意见为空时，显示”无“</li>
+</ol>
+
+<p>图17：任务属性集合<br/>
+<img src="media/14964703791779/14973447501105.jpg" alt=""/>￼</p>
+
+<h5 id="toc_39">2.2.4.4 评审专家列表/增删查改操作</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>评审专家列表用于管理评审专家，可以对评审专家进行增删查改等操作</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>添加评审专家：学科分类使用后台”摘要提交设置“中设置好的学科分类</li>
+<li>已经被分配任务的专家无法删除，且在名字前面会有任务图标，鼠标经过时会显示相关任务数据</li>
+<li>高级筛选可以使用评审专家中所有字段进行筛选</li>
+<li>删除时需要二次确认，删除后评审专家无法恢复</li>
+<li>导入使用统一的导入界面，单会组开发</li>
+<li>添加或导入时需要有密码字段</li>
+</ol>
+
+<h4 id="toc_40">2.2.5 评审专家个人中心</h4>
+
+<h5 id="toc_41">2.2.5.1 评审专家登录</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>在登录页面添加评审专家登录入口，使用后台导入或添加的评审专家帐号（手机/邮箱）登录</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>使用（手机/邮箱）作为帐号</li>
+<li>密码MD5加密保存</li>
+</ol>
+
+<h5 id="toc_42">2.2.5.2 待接受任务列表</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>显示当前评审专家收到的未接受的任务</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>简单搜索/筛选：可使用”摘要标题“、”摘要序号“、”任务编号“、”作者姓名“进行搜索</li>
+<li>接受任务后，摘要转到”未评审摘要“中</li>
+<li>拒绝任务后，摘要应同时出现在后台管理的”已拒绝“和”待分配“状态中</li>
+<li>查看：可查看摘要主要内容</li>
+<li>鼠标点击出操作按钮外的其余区域均可点击，见图17</li>
+<li>鼠标经过和选中效果，见图18</li>
+</ol>
+
+<p>图17: 点击区域<br/>
+<img src="media/14964703791779/14974005043602.jpg" alt=""/>￼</p>
+
+<p>图18：鼠标经过和选中效果<br/>
+<img src="media/14964703791779/14974007336628.jpg" alt=""/>￼</p>
+
+<h5 id="toc_43">2.2.5.3 未评审摘要列表</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>未评审摘要列表显示所有已接受的摘要任务，需要强调任务完成截止时间</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>未评审摘要列表中的任务仍然可以拒绝，摘要应同时出现在后台管理的”已拒绝“和”待分配“状态中</li>
+<li>只能单条评审，无法批量处理</li>
+<li>评审时，需要填写评审处理方式和评审意见（根据后台设置）</li>
+<li>评审后，需修改的摘要如果已被作者重新提交，也需要显示到未评审摘要列表中，见图19</li>
+</ol>
+
+<p>图19：已修改的摘要<br/>
+<img src="media/14964703791779/14974018935387.jpg" alt=""/>￼</p>
+
+<h5 id="toc_44">2.2.5.4 已评审摘要列表</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>已评审摘要列表显示所有已经提交过评审的摘要任务，需要显示评审结果</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>已评审的摘要无法再次修改</li>
+<li>可以查看评审意见，查看评审意见时鼠标经过后显示评审意见内容</li>
+<li>评审结果需要显示真实选择的评审结果，而不是其表示的结果内容</li>
+</ol>
+
+<h4 id="toc_45">2.2.6 征文提醒设置</h4>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>在征文状态变更时会使用短信或邮件向作者或评审专家进行提醒</p>
+
+<ul>
+<li>业务规则</li>
+</ul>
+
+<p>发送给主办方的通知：</p>
+
+<p>1.任务接受提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：在摘要评审任务被评审专家接受时发送给主办方管理员</li>
+<li>内容：征文编号为：ABC-123的评审任务已被评审专家{专家姓名}接受，请登录后台查看；</li>
+<li>默认状态：不勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、专家姓名、专家手机、专家邮箱、摘要编号、任务ID、任务接受截止时间、征文学科分类、摘要标题、任务接受时间</li>
+</ul>
+</blockquote>
+
+<p>2.任务拒绝提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：在摘要评审任务被评审专家拒绝时发送给主办方管理员</li>
+<li>内容：征文编号为：ABC-123的评审任务已被评审专家{专家姓名}拒绝，请登录后台查看</li>
+<li>默认状态：不勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、专家姓名、专家手机、专家邮箱、摘要编号、任务ID、任务接受截止时间、征文学科分类、摘要标题、任务拒绝时间、拒绝原因</li>
+</ul>
+</blockquote>
+
+<p>3.评审邀请退回提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：在摘要评审任务到截止时间后未被接受或拒绝，被退回时发送给主办方管理员</li>
+<li>内容：征文编号为：ABC-123的评审任务已到截止时间，评审专家{专家姓名}未接受该任务，已被退回，请登录后台查看</li>
+<li>默认状态：不勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、专家姓名、专家手机、专家邮箱、摘要编号、任务ID、任务接受截止时间、征文学科分类、摘要标题、任务退回时间</li>
+</ul>
+</blockquote>
+
+<p>4.评审任务退回提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：在摘要评审任务到截止时间后未被评审，被退回时发送给主办方管理员</li>
+<li>内容：征文编号为：ABC-123的评审任务已到截止时间，评审专家{专家姓名}未进行评审，已被退回，请登录后台查看</li>
+<li>默认状态：不勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、专家姓名、专家手机、专家邮箱、摘要编号、任务ID、任务接受截止时间、征文学科分类、摘要标题、任务退回时间</li>
+</ul>
+</blockquote>
+
+<p>5.评审任务完成提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：当评审任务被评审专家评审完成后，发送给主办方管理员</li>
+<li>内容：编号为：ABC-123的摘要已评审完成，评审结果为“{评审结果}”，请登录后台查看</li>
+<li>默认状态：不勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、专家姓名、专家手机、专家邮箱、摘要编号、任务ID、任务接受截止时间、征文学科分类、摘要标题、任务完成时间</li>
+</ul>
+</blockquote>
+
+<p>发送给作者的提醒：</p>
+
+<p>1.提交成功提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：在征文被作者提交成功时发送给作者</li>
+<li>内容：您的摘要已提交成功，在{截止时间}之前，您可以使用手机号码登录后台修改征文内容</li>
+<li>默认状态：勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、学科分类、个人中心URL、征文标题、提交时间</li>
+</ul>
+</blockquote>
+
+<p>2.摘要修改提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：当摘要被评审专家或主办方标记为“需修改”时，发送给作者</li>
+<li>内容：您在[会议名称]中提交的摘要评审结果为：“小幅修改”，请登录个人中心查看</li>
+<li>默认状态：勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、学科分类、个人中心URL、征文标题、提交时间、征文状态</li>
+</ul>
+</blockquote>
+
+<p>3.评审结果提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：a. 当评审任务被评审专家评审完，且不需要最终评审时；b.需要最终评审，并且主办方在后台进行了最终评审时；发送给作者的通知</li>
+<li>内容：您提交的摘要已评审完成，评审结果为：{评审结果}，请登录个人中心查看评审结果</li>
+<li>默认状态：勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、学科分类、个人中心URL、征文标题、提交时间、评审结果</li>
+</ul>
+</blockquote>
+
+<p>发送给评审专家的提醒：</p>
+
+<p>1.分配评审提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：在摘要被分配给评审专家时发送评审专家
+## &gt; * 内容：您已收到一条新的评审邀请，征文编号：ABC-123，请登录查看 {loginUrl}</li>
+<li>默认状态：勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、学科分类、个人中心URL、征文标题、提交时间、任务接受截止时间、任务分配时间</li>
+</ul>
+</blockquote>
+
+<p>2.摘要已修改提醒：</p>
+
+<blockquote>
+<ul>
+<li>触发条件：当摘要被作者修改完成后，再次提交时，发送给评审专家</li>
+<li>内容：编号为：ABC-123的摘要已修改完成，请登录后台查看</li>
+<li>默认状态：勾选</li>
+<li>可插入字段：作者姓名、作者手机、作者邮箱、学科分类、个人中心URL、征文标题、提交时间、任务评审截止时间、任务分配时间</li>
+</ul>
+</blockquote>
+
+<h2 id="toc_46">3. 常见问题</h2>
+
+<h3 id="toc_47">3.1 问题一：勾选行中包括了有任务的专家（备注：已经被分配任务的专家无法删除）以及没有任务的专家，那么点击批量删除后，结果如何？</h3>
+
+<p><strong>相关问题：专家管理这里  批量删除的时候  已经有任务的专家应该是不能删除的吧   这里是不是要把有任务的专家前面的复选框变成不可选的状态呢？</strong></p>
+
+<p>答：考虑到以后可能会添加其他批量操作的情况，需要允许选中已有任务的专家；当选中的专家中即有没有任务的专家，也有已有任务的专家时，<em>禁用“批量删除”操作，鼠标经过时提示：您选择的专家中已被安排评审任务，无法批量删除</em></p>
+
+<h3 id="toc_48">3.2 问题二：征文列表中的“已修改”是按钮还是标签？</h3>
+
+<p>答：“已修改”是一个标签，表示当前征文摘要已经被作者修改过了</p>
+
+<h3 id="toc_49">3.3 问题三：征文列表中每个选项卡中对应的操作具体是如何对应的？比如点击已评审，是否只有最终评审和归档呢？</h3>
+
+<p><strong>相关问题一：分配评审也会存在补充图中吗？则该图中的单篇评审图标与分配评审有何区别？</strong></p>
+
+<p><strong>相关问题二：点击上方的每一个选项卡， 列表中的  操作列如何一一对应的？（比如此图中  操作列3个操作）</strong></p>
+
+<p>答：</p>
+
+<blockquote>
+<ul>
+<li>“全部”列表中，存在“归档”、“删除”两种操作</li>
+<li>&quot;待分配&quot;列表中，存在“归档”、“删除”、“分配评审”、“最终评审”四种操作</li>
+<li>“待接受”列表中，存在“归档”、“删除”、“取消评审任务”三种操作</li>
+<li>“待评审”列表中，存在“归档”、“删除”、“取消评审任务”三种操作</li>
+<li>“已评审”列表中，存在“归档”、“删除”、“最终评审”三种操作</li>
+<li>“已最终评审”列表明中，存在“归档”、“删除”、“修改评审”三种操作</li>
+</ul>
+
+<p>注意：”取消评审“任务操作会将评审任务取消，专家在摘要列表里将无法看到该任务和征文摘要，需要二次确认，提示文案：取消评审将会使该任务所属评审专家无法再看到该任务<br/>
+“修改评审”可以修改已经存在的评审结果，使用通用的评审模态窗口</p>
+</blockquote>
+
+<p>相关问题一回答：分配评审只存在与“待分配”列表中，与单篇评审图标的分配评审没有区别，只是一个是批量，一个是单个</p>
+
+<p>相关问题二回答：在“全部”“待分配”中，存在“编辑”、“删除”、“分配评审”三个按钮，在其他列表中，仅有“编辑”、“删除”按钮</p>
+
+<h3 id="toc_50">3.4 征文序号必须生成</h3>
+
+<h3 id="toc_51">3.5 学科分类只支持单选</h3>
+
+<p>学科分类表：<a href="http://dean.pku.edu.cn/urtpku/yjxk.html">http://dean.pku.edu.cn/urtpku/yjxk.html</a></p>
+
+<h3 id="toc_52">3.6 专家登录</h3>
+
+<h3 id="toc_53">3.7 作者个人中心菜单</h3>
+
+<ul>
+<li>个人信息（Personal information）</li>
+<li>报名注册（Register）</li>
+<li>提交摘要（Abstract）</li>
+<li>酒店预订（Hotel reservation）</li>
+<li>付款（Payment）</li>
+<li><p>退出登录（Logout）</p></li>
+</ul>
+
+<ol>
+<li>点击“报名注册”进入正常报名流程，提交完订单后，跳转回个人中心</li>
+<li>“酒店预订”是否显示需要判断后台酒店是否开启，点击“酒店预订”后，进入正常预订酒店流程，提交订单跳转回个人中心</li>
+<li>“付款”页面显示该联系人（帐号）下所有未付款的订单，并可以合并付款</li>
+</ol>
+
+<h3 id="toc_54">3.8 摘要提交后，“已通过”、“需修改”状态下需要显示“评审结果”</h3>
+
+<p>“已通过”状态下，仅显示最终评审的结果，“需修改”状态下显示评审专家给的评审结果</p>
+
+<p>显示方式：<br/>
+<img src="media/14964703791779/15004579815285.jpg" alt=""/>￼</p>
+
+<p><img src="media/14964703791779/15004580024960.jpg" alt=""/>￼</p>
+
+</div></body>
+
+</html>
