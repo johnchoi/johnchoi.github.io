@@ -899,10 +899,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.7</td>
 <td>2017/8/23</td>
 </tr>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.8</td>
+<td>2017/8/28</td>
+</tr>
 </tbody>
 </table>
 
-<p><strong>当前版本号：V1.0.7</strong></p>
+<p><strong>当前版本号：V1.0.8</strong></p>
 
 <p><strong>修订控制</strong></p>
 
@@ -932,7 +938,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.1</td>
 <td>2.2.1.1<br>2.2.3.3</td>
 <td>修改</td>
-<td>添加开启学术会议功能；<br>添加修改帐号信息功能;</td>
+<td>1. 添加开启学术会议功能；<br>2. 添加修改帐号信息功能;</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -940,7 +946,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.2</td>
 <td>2.2.6</td>
 <td>新增</td>
-<td>新增征文通知设置相关说明</td>
+<td>1. 新增征文通知设置相关说明</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -948,7 +954,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.3</td>
 <td>2.2.1.4</td>
 <td>修改</td>
-<td>摘要提交形式设置</td>
+<td>1. 摘要提交形式设置</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -956,7 +962,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.4</td>
 <td>2.2.4.1</td>
 <td>新增</td>
-<td>新增后台摘要下载功能</td>
+<td>1. 新增后台摘要下载功能</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -964,7 +970,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.5</td>
 <td>2.2.4.1</td>
 <td>新增</td>
-<td>由于下载任务可能持续较查时间，新增摘要下载窗口，提示用户当前下载任务的状态</td>
+<td>1. 由于下载任务可能持续较查时间，新增摘要下载窗口，提示用户当前下载任务的状态</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -972,7 +978,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.6</td>
 <td>2.2.4.5</td>
 <td>新增</td>
-<td>新增后台导出征文数据功能</td>
+<td>1. 新增后台导出征文数据功能</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -980,7 +986,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.7</td>
 <td>2.2.1.11<br>2.2.4.1</td>
 <td>新增/修订</td>
-<td>新增需要报名后方可提交征文功能<br>修订了下载文件时的处理方式</td>
+<td>1. 新增需要报名后方可提交征文功能<br>2. 修订了下载文件时的处理方式</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>9</td>
+<td>V1.0.8</td>
+<td>2.2.3.7<br>2.2.4.1<br>2.2.1.11</td>
+<td>新增/修订</td>
+<td>1. 第一作者、通讯作者和共同作者都需要可以设置为演讲作者<br>2. 提交征文时，共同作者可以不必填<br>3. 新增提交征文全文功能</td>
 <td>周勤</td>
 </tr>
 </tbody>
@@ -1059,124 +1073,136 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>
 <a href="#toc_21">2.2.1.11 报名后方可提交征文 <strong>（V1.0.7新增）</strong></a>
 </li>
+<li>
+<a href="#toc_22">2.2.1.11 提交征文全文附件 <strong>（V1.0.8新增）</strong></a>
+</li>
 </ul>
 </li>
 <li>
-<a href="#toc_22">2.2.2 摘要评审设置</a>
+<a href="#toc_23">2.2.2 摘要评审设置</a>
 <ul>
 <li>
-<a href="#toc_23">2.2.2.1 处理方式设置</a>
+<a href="#toc_24">2.2.2.1 处理方式设置</a>
 </li>
 <li>
-<a href="#toc_24">2.2.2.2 评审意见设置</a>
+<a href="#toc_25">2.2.2.2 评审意见设置</a>
 </li>
 <li>
-<a href="#toc_25">2.2.2.3 最终评审</a>
+<a href="#toc_26">2.2.2.3 最终评审</a>
 </li>
 <li>
-<a href="#toc_26">2.2.2.4 任务接受时间</a>
+<a href="#toc_27">2.2.2.4 任务接受时间</a>
 </li>
 <li>
-<a href="#toc_27">2.2.2.5 任务评审时间</a>
+<a href="#toc_28">2.2.2.5 任务评审时间</a>
 </li>
 <li>
-<a href="#toc_28">2.2.2.6 摘要修改时间</a>
+<a href="#toc_29">2.2.2.6 摘要修改时间</a>
+</li>
+<li>
+<a href="#toc_30">2.2.2.7 是否显示征文全文附件（<strong>V1.0.8新增</strong>）</a>
 </li>
 </ul>
 </li>
 <li>
-<a href="#toc_29">2.2.3 摘要提交</a>
+<a href="#toc_31">2.2.3 摘要提交</a>
 <ul>
 <li>
-<a href="#toc_30">2.2.3.1 添加“重要日期”模块</a>
+<a href="#toc_32">2.2.3.1 添加“重要日期”模块</a>
 </li>
 <li>
-<a href="#toc_31">2.2.3.2 注册登录功能（联系人）</a>
+<a href="#toc_33">2.2.3.2 注册登录功能（联系人）</a>
 </li>
 <li>
-<a href="#toc_32">2.2.3.3 修改个人信息（联系人）</a>
+<a href="#toc_34">2.2.3.3 修改个人信息（联系人）</a>
 </li>
 <li>
-<a href="#toc_33">2.2.3.4 个人中心嵌入报名表单，包含门票字段</a>
+<a href="#toc_35">2.2.3.4 个人中心嵌入报名表单，包含门票字段</a>
 </li>
 <li>
-<a href="#toc_34">2.2.3.5 个人中心查看订单并付款</a>
+<a href="#toc_36">2.2.3.5 个人中心查看订单并付款</a>
 </li>
 <li>
-<a href="#toc_35">2.2.3.6 发票功能</a>
+<a href="#toc_37">2.2.3.6 发票功能</a>
+</li>
+<li>
+<a href="#toc_38">2.2.3.7 提交征文（<strong>V1.0.8新增</strong>）</a>
 </li>
 </ul>
 </li>
 <li>
-<a href="#toc_36">2.2.4 摘要后台管理</a>
+<a href="#toc_39">2.2.4 摘要后台管理</a>
 <ul>
 <li>
-<a href="#toc_37">2.2.4.1 征文列表和编辑征文</a>
+<a href="#toc_40">2.2.4.1 征文列表和编辑征文</a>
 </li>
 <li>
-<a href="#toc_38">2.2.4.2 分配评审</a>
+<a href="#toc_41">2.2.4.2 分配评审</a>
 </li>
 <li>
-<a href="#toc_39">2.2.4.3 评审任务列表</a>
+<a href="#toc_42">2.2.4.3 评审任务列表</a>
 </li>
 <li>
-<a href="#toc_40">2.2.4.4 评审专家列表/增删查改操作</a>
+<a href="#toc_43">2.2.4.4 评审专家列表/增删查改操作</a>
 </li>
 <li>
-<a href="#toc_41">2.2.4.5 导出征文功能 <strong>V1.0.6新增</strong></a>
+<a href="#toc_44">2.2.4.5 导出征文功能 <strong>V1.0.6新增</strong></a>
 </li>
 </ul>
 </li>
 <li>
-<a href="#toc_42">2.2.5 评审专家个人中心</a>
+<a href="#toc_45">2.2.5 评审专家个人中心</a>
 <ul>
 <li>
-<a href="#toc_43">2.2.5.1 评审专家登录</a>
+<a href="#toc_46">2.2.5.1 评审专家登录</a>
 </li>
 <li>
-<a href="#toc_44">2.2.5.2 待接受任务列表</a>
+<a href="#toc_47">2.2.5.2 待接受任务列表</a>
 </li>
 <li>
-<a href="#toc_45">2.2.5.3 未评审摘要列表</a>
+<a href="#toc_48">2.2.5.3 未评审摘要列表</a>
 </li>
 <li>
-<a href="#toc_46">2.2.5.4 已评审摘要列表</a>
+<a href="#toc_49">2.2.5.4 已评审摘要列表</a>
+</li>
+<li>
+<a href="#toc_50">2.2.5.5 新增显示征文全文功能</a>
 </li>
 </ul>
 </li>
 <li>
-<a href="#toc_47">2.2.6 征文提醒设置</a>
+<a href="#toc_51">2.2.6 征文提醒设置</a>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<a href="#toc_48">3. 常见问题</a>
+<a href="#toc_52">3. 常见问题</a>
 <ul>
 <li>
-<a href="#toc_49">3.1 问题一：勾选行中包括了有任务的专家（备注：已经被分配任务的专家无法删除）以及没有任务的专家，那么点击批量删除后，结果如何？</a>
+<a href="#toc_53">3.1 问题一：勾选行中包括了有任务的专家（备注：已经被分配任务的专家无法删除）以及没有任务的专家，那么点击批量删除后，结果如何？</a>
 </li>
 <li>
-<a href="#toc_50">3.2 问题二：征文列表中的“已修改”是按钮还是标签？</a>
+<a href="#toc_54">3.2 问题二：征文列表中的“已修改”是按钮还是标签？</a>
 </li>
 <li>
-<a href="#toc_51">3.3 问题三：征文列表中每个选项卡中对应的操作具体是如何对应的？比如点击已评审，是否只有最终评审和归档呢？</a>
+<a href="#toc_55">3.3 问题三：征文列表中每个选项卡中对应的操作具体是如何对应的？比如点击已评审，是否只有最终评审和归档呢？</a>
 </li>
 <li>
-<a href="#toc_52">3.4 征文序号必须生成</a>
+<a href="#toc_56">3.4 征文序号必须生成</a>
 </li>
 <li>
-<a href="#toc_53">3.5 学科分类只支持单选</a>
+<a href="#toc_57">3.5 学科分类只支持单选</a>
 </li>
 <li>
-<a href="#toc_54">3.6 专家登录</a>
+<a href="#toc_58">3.6 专家登录</a>
 </li>
 <li>
-<a href="#toc_55">3.7 作者个人中心菜单</a>
+<a href="#toc_59">3.7 作者个人中心菜单</a>
 </li>
 <li>
-<a href="#toc_56">3.8 摘要提交后，“已通过”、“需修改”状态下需要显示“评审结果”</a>
+<a href="#toc_60">3.8 摘要提交后，“已通过”、“需修改”状态下需要显示“评审结果”</a>
 </li>
 </ul>
 </li>
@@ -1830,9 +1856,27 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <p><img src="media/14964703791779/15034823981271.jpg" alt=""/>￼</p>
 
-<h4 id="toc_22">2.2.2 摘要评审设置</h4>
+<h5 id="toc_22">2.2.1.11 提交征文全文附件 <strong>（V1.0.8新增）</strong></h5>
 
-<h5 id="toc_23">2.2.2.1 处理方式设置</h5>
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>开启提交征文全文功能后，作者在前台提交时可以按后台设置的方式提交征文全文</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>该选项默认状态为不开启</li>
+<li>开启该选项后，可设置全文是否必须提交，默认为不必须提交</li>
+<li>征文全文仅支持使用文件方式进行上传，支持格式为doc|docx|pdf|zip|rar，文件最大不超过50M</li>
+</ol>
+
+<h4 id="toc_23">2.2.2 摘要评审设置</h4>
+
+<h5 id="toc_24">2.2.2.1 处理方式设置</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1854,7 +1898,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图11，编辑删除样式<br/>
 <img src="media/14964703791779/14973367131076.jpg" alt=""/>￼</p>
 
-<h5 id="toc_24">2.2.2.2 评审意见设置</h5>
+<h5 id="toc_25">2.2.2.2 评审意见设置</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1872,7 +1916,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>选择”无须填写“时，不显示输入框</li>
 </ol>
 
-<h5 id="toc_25">2.2.2.3 最终评审</h5>
+<h5 id="toc_26">2.2.2.3 最终评审</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1889,7 +1933,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>开启最终评审时，在评审专家评审后，还需要使用后台再进行一次评审处理，处理表单与评审专家一样</li>
 </ol>
 
-<h5 id="toc_26">2.2.2.4 任务接受时间</h5>
+<h5 id="toc_27">2.2.2.4 任务接受时间</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1907,7 +1951,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>默认开启</li>
 </ol>
 
-<h5 id="toc_27">2.2.2.5 任务评审时间</h5>
+<h5 id="toc_28">2.2.2.5 任务评审时间</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1926,7 +1970,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>默认开启</li>
 </ol>
 
-<h5 id="toc_28">2.2.2.6 摘要修改时间</h5>
+<h5 id="toc_29">2.2.2.6 摘要修改时间</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1944,9 +1988,26 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>默认不开启</li>
 </ol>
 
-<h4 id="toc_29">2.2.3 摘要提交</h4>
+<h5 id="toc_30">2.2.2.7 是否显示征文全文附件（<strong>V1.0.8新增</strong>）</h5>
 
-<h5 id="toc_30">2.2.3.1 添加“重要日期”模块</h5>
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>控制评审任务是否需要显示作者提交的征文全文附件</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>开启该选项后，评审专家即可在专家后台查看征文全文的附件</li>
+<li>专家后台仅支持网页端查看征文全文，不支持下载</li>
+</ol>
+
+<h4 id="toc_31">2.2.3 摘要提交</h4>
+
+<h5 id="toc_32">2.2.3.1 添加“重要日期”模块</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1971,7 +2032,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图13：重要日期模块样式<br/>
 <img src="media/14964703791779/14973386977201.jpg" alt=""/>￼</p>
 
-<h5 id="toc_31">2.2.3.2 注册登录功能（联系人）</h5>
+<h5 id="toc_33">2.2.3.2 注册登录功能（联系人）</h5>
 
 <ul>
 <li>简要说明</li>
@@ -1979,7 +2040,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <p>报名前先注册/登录后报名的流程</p>
 
-<h5 id="toc_32">2.2.3.3 修改个人信息（联系人）</h5>
+<h5 id="toc_34">2.2.3.3 修改个人信息（联系人）</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2002,7 +2063,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图22：修改密码<br/>
 <img src="media/14964703791779/14985321735836.jpg" alt=""/>￼</p>
 
-<h5 id="toc_33">2.2.3.4 个人中心嵌入报名表单，包含门票字段</h5>
+<h5 id="toc_35">2.2.3.4 个人中心嵌入报名表单，包含门票字段</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2022,7 +2083,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图20：付款页面<br/>
 <img src="media/14964703791779/14984471771077.jpg" alt=""/>￼</p>
 
-<h5 id="toc_34">2.2.3.5 个人中心查看订单并付款</h5>
+<h5 id="toc_36">2.2.3.5 个人中心查看订单并付款</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2042,7 +2103,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图14：未付款订单提示<br/>
 <img src="media/14964703791779/14973399039337.jpg" alt=""/>￼</p>
 
-<h5 id="toc_35">2.2.3.6 发票功能</h5>
+<h5 id="toc_37">2.2.3.6 发票功能</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2050,9 +2111,28 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <p>按订单提供发票信息填写功能（已完成）</p>
 
-<h4 id="toc_36">2.2.4 摘要后台管理</h4>
+<h5 id="toc_38">2.2.3.7 提交征文（<strong>V1.0.8新增</strong>）</h5>
 
-<h5 id="toc_37">2.2.4.1 征文列表和编辑征文</h5>
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>后台提交征文功能</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>第一作者、通讯作者在填写时，都需要添加演讲作者的开关（<strong>V1.0.8新增</strong>）</li>
+<li>后台查看征文时，需要在演讲作者姓名后面添加（演讲作者），例：Bill Gates(演讲作者)（<strong>V1.0.8新增</strong>）</li>
+<li>默认状态下，不再需要填写共同作者，自己增加共同作者和删除共同作者的逻辑不变（<strong>V1.0.8新增</strong>）</li>
+<li>新增提交征文全文功能，根据后台设置是否开启，是否必填确定是否显示提交征文全文功能，以及是否必须提交征文全文功能（<strong>V1.0.8新增</strong>）</li>
+</ol>
+
+<h4 id="toc_39">2.2.4 摘要后台管理</h4>
+
+<h5 id="toc_40">2.2.4.1 征文列表和编辑征文</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2076,7 +2156,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>下载全部：无论有没有选中论文摘要，下载全部功能均可以点击，点击后将所有征文打包（压缩：.zip格式）下载，下载格式为用户上传的格式。<strong>V1.0.4（新增）</strong></li>
 <li>下载所选：当选中了某一篇或几篇论文摘要时，出现“下载所选”按钮，注：选中后才显示，与删除按钮一样。点击后将选中的征文打包（压缩：.zip格式）下载，不论选中论文摘要的篇数，如只选中了一篇，也一样打包下载。 <strong>V1.0.4（新增）</strong></li>
 <li>如果下载数字为0的话，直接提示“您选择的征文记录没有文件可以下载” <strong>V1.0.7（修订）</strong></li>
-<li>新增下载任务：当点击“下载全部”、“下载所选”时，如果当前没有进行中下载任务（进行中的下载任务包括未准备好的和已准备好且已经下载的），则直接弹出“查看下载”窗口，并马上开始下载准备。如果有进行中的下载任务，则需要先进行二次确认，点击继续后取消进行中的任务后，再开始新的下载任务。<strong>V1.0.5（新增）</strong></li>
+<li>新增下载任务：当点击“下载全部”、“下 载所选”时，如果当前没有进行中下载任务（进行中的下载任务包括未准备好的和已准备好且已经下载的），则直接弹出“查看下载”窗口，并马上开始下载准备。如果有进行中的下载任务，则需要先进行二次确认，点击继续后取消进行中的任务后，再开始新的下载任务。<strong>V1.0.5（新增）</strong></li>
+<li>将所有下载功能合并到一起，仅留下一个“下载”按钮，点击下载时，使用下拉菜单选择下载操作，下拉菜单包括：下载全部、下载所选 <strong>V1.0.8（新增）</strong></li>
+<li>下载时，将每篇征文都建立文件夹，征文的附件（摘要和全文）均放置在该文件夹内，如果没有全文附件，则只放摘要 <strong>V1.0.8（新增）</strong></li>
+<li>征文全文不提供在线查看功能，仅提供下载 <strong>V1.0.8（新增）</strong></li>
 </ol>
 
 <p><strong>V1.0.4（新增）论文摘要下载功能</strong><br/>
@@ -2088,7 +2171,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图16：编辑摘要内容，文件形式<br/>
 <img src="media/14964703791779/14973427704598.jpg" alt=""/>￼</p>
 
-<h5 id="toc_38">2.2.4.2 分配评审</h5>
+<h5 id="toc_41">2.2.4.2 分配评审</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2107,7 +2190,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>点击单条记录进行分配时，将按照当前摘要的学科分类自动匹配相同学科的专家</li>
 </ol>
 
-<h5 id="toc_39">2.2.4.3 评审任务列表</h5>
+<h5 id="toc_42">2.2.4.3 评审任务列表</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2129,7 +2212,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图17：任务属性集合<br/>
 <img src="media/14964703791779/14973447501105.jpg" alt=""/>￼</p>
 
-<h5 id="toc_40">2.2.4.4 评审专家列表/增删查改操作</h5>
+<h5 id="toc_43">2.2.4.4 评审专家列表/增删查改操作</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2150,7 +2233,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>添加或导入时需要有密码字段</li>
 </ol>
 
-<h5 id="toc_41">2.2.4.5 导出征文功能 <strong>V1.0.6新增</strong></h5>
+<h5 id="toc_44">2.2.4.5 导出征文功能 <strong>V1.0.6新增</strong></h5>
 
 <ul>
 <li>简要说明</li>
@@ -2170,9 +2253,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>下载文件名：征文导出数据20170822115633.xls；命名格式：&quot;征文导出数据&quot; + yyyyMMddhhmmss + &quot;.xls&quot;</li>
 </ol>
 
-<h4 id="toc_42">2.2.5 评审专家个人中心</h4>
+<h4 id="toc_45">2.2.5 评审专家个人中心</h4>
 
-<h5 id="toc_43">2.2.5.1 评审专家登录</h5>
+<h5 id="toc_46">2.2.5.1 评审专家登录</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2189,7 +2272,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>密码MD5加密保存</li>
 </ol>
 
-<h5 id="toc_44">2.2.5.2 待接受任务列表</h5>
+<h5 id="toc_47">2.2.5.2 待接受任务列表</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2216,7 +2299,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图18：鼠标经过和选中效果<br/>
 <img src="media/14964703791779/14974007336628.jpg" alt=""/>￼</p>
 
-<h5 id="toc_45">2.2.5.3 未评审摘要列表</h5>
+<h5 id="toc_48">2.2.5.3 未评审摘要列表</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2238,7 +2321,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>图19：已修改的摘要<br/>
 <img src="media/14964703791779/14974018935387.jpg" alt=""/>￼</p>
 
-<h5 id="toc_46">2.2.5.4 已评审摘要列表</h5>
+<h5 id="toc_49">2.2.5.4 已评审摘要列表</h5>
 
 <ul>
 <li>简要说明</li>
@@ -2256,7 +2339,24 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>评审结果需要显示真实选择的评审结果，而不是其表示的结果内容</li>
 </ol>
 
-<h4 id="toc_47">2.2.6 征文提醒设置</h4>
+<h5 id="toc_50">2.2.5.5 新增显示征文全文功能</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>根据后台配置是否显示征文全文功能</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>后台评审设置中可以设置评审专家是否能够查看征文全文</li>
+<li>根据后台配置控制评审专家是否可以查看全文</li>
+</ol>
+
+<h4 id="toc_51">2.2.6 征文提醒设置</h4>
 
 <ul>
 <li>简要说明</li>
@@ -2384,19 +2484,19 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </blockquote>
 
-<h2 id="toc_48">3. 常见问题</h2>
+<h2 id="toc_52">3. 常见问题</h2>
 
-<h3 id="toc_49">3.1 问题一：勾选行中包括了有任务的专家（备注：已经被分配任务的专家无法删除）以及没有任务的专家，那么点击批量删除后，结果如何？</h3>
+<h3 id="toc_53">3.1 问题一：勾选行中包括了有任务的专家（备注：已经被分配任务的专家无法删除）以及没有任务的专家，那么点击批量删除后，结果如何？</h3>
 
 <p><strong>相关问题：专家管理这里  批量删除的时候  已经有任务的专家应该是不能删除的吧   这里是不是要把有任务的专家前面的复选框变成不可选的状态呢？</strong></p>
 
 <p>答：考虑到以后可能会添加其他批量操作的情况，需要允许选中已有任务的专家；当选中的专家中即有没有任务的专家，也有已有任务的专家时，<em>禁用“批量删除”操作，鼠标经过时提示：您选择的专家中已被安排评审任务，无法批量删除</em></p>
 
-<h3 id="toc_50">3.2 问题二：征文列表中的“已修改”是按钮还是标签？</h3>
+<h3 id="toc_54">3.2 问题二：征文列表中的“已修改”是按钮还是标签？</h3>
 
 <p>答：“已修改”是一个标签，表示当前征文摘要已经被作者修改过了</p>
 
-<h3 id="toc_51">3.3 问题三：征文列表中每个选项卡中对应的操作具体是如何对应的？比如点击已评审，是否只有最终评审和归档呢？</h3>
+<h3 id="toc_55">3.3 问题三：征文列表中每个选项卡中对应的操作具体是如何对应的？比如点击已评审，是否只有最终评审和归档呢？</h3>
 
 <p><strong>相关问题一：分配评审也会存在补充图中吗？则该图中的单篇评审图标与分配评审有何区别？</strong></p>
 
@@ -2422,15 +2522,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <p>相关问题二回答：在“全部”“待分配”中，存在“编辑”、“删除”、“分配评审”三个按钮，在其他列表中，仅有“编辑”、“删除”按钮</p>
 
-<h3 id="toc_52">3.4 征文序号必须生成</h3>
+<h3 id="toc_56">3.4 征文序号必须生成</h3>
 
-<h3 id="toc_53">3.5 学科分类只支持单选</h3>
+<h3 id="toc_57">3.5 学科分类只支持单选</h3>
 
 <p>学科分类表：<a href="http://dean.pku.edu.cn/urtpku/yjxk.html">http://dean.pku.edu.cn/urtpku/yjxk.html</a></p>
 
-<h3 id="toc_54">3.6 专家登录</h3>
+<h3 id="toc_58">3.6 专家登录</h3>
 
-<h3 id="toc_55">3.7 作者个人中心菜单</h3>
+<h3 id="toc_59">3.7 作者个人中心菜单</h3>
 
 <ul>
 <li>个人信息（Personal information）</li>
@@ -2447,7 +2547,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>“付款”页面显示该联系人（帐号）下所有未付款的订单，并可以合并付款</li>
 </ol>
 
-<h3 id="toc_56">3.8 摘要提交后，“已通过”、“需修改”状态下需要显示“评审结果”</h3>
+<h3 id="toc_60">3.8 摘要提交后，“已通过”、“需修改”状态下需要显示“评审结果”</h3>
 
 <p>“已通过”状态下，仅显示最终评审的结果，“需修改”状态下显示评审专家给的评审结果</p>
 
