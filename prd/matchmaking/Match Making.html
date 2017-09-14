@@ -1,0 +1,1400 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title># Match Making会谈预约系统产品需求文档</title>
+<style>
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+body {
+  background-color: white;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;;word-wrap: break-word; word-break: break-all;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+table td{ word-wrap: break-word !important; word-break: break-all !important; }
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rule .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.hljs-name {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">Match Making会谈预约系统产品需求文档</h1>
+
+<table>
+<thead>
+<tr>
+<th>文件编号</th>
+<th>作者</th>
+<th>文档版本</th>
+<th>最后修改日期</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>MM-PRD</td>
+<td>周勤</td>
+<td>V1.0.0</td>
+<td>2017/9/11</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>当前版本号：V1.0.0</strong></p>
+
+<p><strong>修订控制</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>文档版本</th>
+<th>修订章节</th>
+<th>修订原因</th>
+<th>修订内容</th>
+<th>修订人</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>V1.0.0</td>
+<td></td>
+<td>创建</td>
+<td>2017/9/11</td>
+<td>周勤</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>目录</strong></p>
+
+<ul>
+<li>
+<a href="#toc_0">Match Making会谈预约系统产品需求文档</a>
+<ul>
+<li>
+<a href="#toc_1">1. 产品概述</a>
+<ul>
+<li>
+<a href="#toc_2">1.1 名词说明</a>
+</li>
+<li>
+<a href="#toc_3">1.2 产品概述及目的</a>
+</li>
+<li>
+<a href="#toc_4">1.3 产品风险</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">2. 功能需求</a>
+<ul>
+<li>
+<a href="#toc_6">2.1 功能总览</a>
+</li>
+<li>
+<a href="#toc_7">2.2 功能详情</a>
+<ul>
+<li>
+<a href="#toc_8">2.2.1 展会预约系统设置</a>
+<ul>
+<li>
+<a href="#toc_9">2.2.1.1 开启展会预约系统</a>
+</li>
+<li>
+<a href="#toc_10">2.2.1.2 增加两种固定的角色</a>
+</li>
+<li>
+<a href="#toc_11">2.2.1.3 预约系统基础设置</a>
+</li>
+<li>
+<a href="#toc_12">2.2.1.4 编辑首页提示信息</a>
+</li>
+<li>
+<a href="#toc_13">2.2.1.5 设置场次/时间</a>
+</li>
+<li>
+<a href="#toc_14">2.2.1.6 设置PSA阶段匹配优先规则</a>
+</li>
+<li>
+<a href="#toc_15">2.2.1.7 互动设置</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 id="toc_1">1. 产品概述</h2>
+
+<h3 id="toc_2">1.1 名词说明</h3>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Match Makin预约系统</td>
+<td>Match Making预约系统是为了促进展会中展商和买家能够尽可能多地成功达成商业协议而生的匹配系统</td>
+</tr>
+<tr>
+<td>完美配对</td>
+<td>展商和买家互相选择了对方的情况</td>
+</tr>
+<tr>
+<td>买家优先</td>
+<td>买家向展商发出了邀约的情况</td>
+</tr>
+<tr>
+<td>展商优先</td>
+<td>展商向买家发出了邀约的情况</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_3">1.2 产品概述及目的</h3>
+
+<p>Match Making展会商业会谈预约系统是为了促进展会中展商和买家能够尽可能多地成功达成商业协议而生的匹配系统，会谈预约系统能够在展前3-6个月内就将所有的展商与买家进行匹配搓合，并约定洽谈时间，在展会现场，买家可以根据自己的约谈日程表前往展商的展台进行商业洽谈，减少了买卖双方在展会中的时间浪费，使约谈更有效率，时间更紧凑。</p>
+
+<p>Match Making展会商业会谈预约系统将预约分为三个不同的阶段：1. PSA(Pre-Scheduling Appointment)展前预约阶段；2. OD(Online Diary)在线互动阶段；3. BMS现场商务约谈安排阶段。</p>
+
+<p><strong>在PSA阶段，展商和买家互相选择一批想要约见的对象，PSA阶段截止后，系统会按照设定的顺序（完美配对 =&gt; 买家优先 =&gt; 展商优先，买家和展商的顺序可在后台调整）自动匹配商务约谈时间。</strong></p>
+
+<p><strong>在OD阶段，展商和买家可以通过在线互动补全剩余的商务约谈空档。在线互动平台将给买家和展商在管理商务约谈日程安排上更大的自由度，展商和买家可以在在线互动平台系统上看到来自对方的预约邀请，并通过选择一个共同的空档向对方发出商务约谈邀请。</strong></p>
+
+<p><strong>在BMS阶段，展商和买家可以通过现场的买家-约见-卖家（BMS）系统来针对现场出现的意外情况对约谈行程做最后的补充和调整。</strong></p>
+
+<h3 id="toc_4">1.3 产品风险</h3>
+
+<p>风险级别说明：非常高的，高的，适度的，低的，非常低的</p>
+
+<table>
+<thead>
+<tr>
+<th>风险</th>
+<th>风险级别</th>
+<th>描述</th>
+<th>监控策略</th>
+<th>改善策略</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_5">2. 功能需求</h2>
+
+<h3 id="toc_6">2.1 功能总览</h3>
+
+<p><strong>预约系统基本模块 - 功能总表</strong></p>
+
+<p>优先级说明：</p>
+
+<ul>
+<li>P1: 优先级最高，必须完成</li>
+<li>P2: 中等优先级，碰到无法解决的问题时可以延后</li>
+<li>P3: 优先级低，在工期紧张时可以延后</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+<th>优先级</th>
+<th>备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1. 预约系统设置</td>
+<td>开启展会预约系统</td>
+<td>P1</td>
+<td>引导用户创建角色、通道及角色规则，单会组提供接口，PSA开发团队调接口创建</td>
+</tr>
+<tr>
+<td></td>
+<td>增加两种固定的角色：展商/买家</td>
+<td>P1</td>
+<td>这两种角色必须要通过展会预约系统创建，无法手动创建，创建好后，用户可以修改角色名称</td>
+</tr>
+<tr>
+<td></td>
+<td>预约系统基础设置</td>
+<td>P1</td>
+<td>设置是否开启预约系统，以及三个阶段的起止时间</td>
+</tr>
+<tr>
+<td></td>
+<td>编辑首页提示信息</td>
+<td>P1</td>
+<td>需要给出提示信息编辑提示，或默认提示</td>
+</tr>
+<tr>
+<td></td>
+<td>设置场次/时间</td>
+<td>P1</td>
+<td>设置现场约谈的天数、每天上下午的起止时间以及每一场的时间长度</td>
+</tr>
+<tr>
+<td></td>
+<td>设置PSA阶段匹配优先规则</td>
+<td>P1</td>
+<td>完美匹配永远优先，可选买家优先或展商优先</td>
+</tr>
+<tr>
+<td></td>
+<td>互动设置</td>
+<td>P2</td>
+<td>是否开通展商和买家之间的互动消息</td>
+</tr>
+<tr>
+<td></td>
+<td>消息系统：查看消息</td>
+<td>P3</td>
+<td>查看展商和买家之前互相发送的消息</td>
+</tr>
+<tr>
+<td></td>
+<td>消息系统：查看系统消息</td>
+<td>P1</td>
+<td>查看自己向展商和买家发送的消息</td>
+</tr>
+<tr>
+<td></td>
+<td>消息系统：发送系统消息</td>
+<td>P1</td>
+<td>向展商和买家发送消息</td>
+</tr>
+<tr>
+<td>2. 展商/买家报名/预约</td>
+<td>展商/买家报名后给他们打上各自角色的标签</td>
+<td>已有功能</td>
+<td></td>
+</tr>
+<tr>
+<td>3.预约系统</td>
+<td>预约系统入口</td>
+<td>P1</td>
+<td>报名后进行，网站进行，微站进行（模块）</td>
+</tr>
+<tr>
+<td></td>
+<td>展前预约：选择预约对象</td>
+<td>P1</td>
+<td>展商/买家各自选择预约对象</td>
+</tr>
+<tr>
+<td></td>
+<td>展前预约：系统根据选择结果自动匹配</td>
+<td>P1</td>
+<td>根据选择结果，时间/场次进行自动匹配，生成买卖双方的预约日程</td>
+</tr>
+<tr>
+<td></td>
+<td>我的简介</td>
+<td>P1</td>
+<td>显示展商/买家的报名信息</td>
+</tr>
+<tr>
+<td></td>
+<td>查看对方公司信息</td>
+<td>P1</td>
+<td>弹窗形式查看对方信息</td>
+</tr>
+<tr>
+<td></td>
+<td>我的预约：预约日程</td>
+<td>P1</td>
+<td>显示展商/买家当前的预约日程</td>
+</tr>
+<tr>
+<td></td>
+<td>我的预约：下载打印预约日程</td>
+<td>P1</td>
+<td>下载日程表以及展会平面图（一一对应）</td>
+</tr>
+<tr>
+<td></td>
+<td>我的预约：收到的请求</td>
+<td>P1</td>
+<td>查看我收到的预约请求，同意/拒绝请求</td>
+</tr>
+<tr>
+<td></td>
+<td>我的预约：发出的请求</td>
+<td>P1</td>
+<td>查看我发出的预约请求，撤回请求</td>
+</tr>
+<tr>
+<td></td>
+<td>我的预约：我拒绝的请求</td>
+<td>P1</td>
+<td>查看我找拒绝的请求，可以重新发送或者删除</td>
+</tr>
+<tr>
+<td></td>
+<td>我的预约：拒绝我的请求</td>
+<td>P1</td>
+<td>查看对方拒绝我的请求，可以重新发送或者删除</td>
+</tr>
+<tr>
+<td></td>
+<td>预约：选择了我的买家</td>
+<td>P1</td>
+<td>查看在PSA阶段选择了我的买家/展商，再次预约可以直接预约成功</td>
+</tr>
+<tr>
+<td></td>
+<td>预约：所有买家</td>
+<td>P1</td>
+<td>在所有买家中筛选查找预约对象</td>
+</tr>
+<tr>
+<td></td>
+<td>我的消息：收件箱</td>
+<td>P1</td>
+<td>显示我收到的系统消息或普通消息</td>
+</tr>
+<tr>
+<td></td>
+<td>我的消息：发件箱</td>
+<td>P1</td>
+<td>显示我发出去的消息</td>
+</tr>
+<tr>
+<td></td>
+<td>我的消息：发消息</td>
+<td>P1</td>
+<td>向别人发送消息</td>
+</tr>
+<tr>
+<td>4.主办方后台管理</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5.现场签到</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_7">2.2 功能详情</h3>
+
+<h4 id="toc_8">2.2.1 展会预约系统设置</h4>
+
+<h5 id="toc_9">2.2.1.1 开启展会预约系统</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>开启展会预约系统功能用于初始化预约系统所需要的数据，包括参会人的展商和买家角色以及角色对应的规则，展商及买家通道。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>在未初始化预约系统时，会议中不存在展商/买家角色以及角色规则</li>
+<li>在未初始化预约系统时，预约系统中的其他设置都无法使用（禁用）</li>
+<li>选择使用通道定义展商/买家角色</li>
+<li>第二步有两个选项：“使用通道定义展商/买家角色规则”，“自定义角色规则”，默认为“使用通道定义展商/买家规则”</li>
+<li>选择“使用通道定义展商/买家角色规则”时，系统将自动为用户创建通道、角色以及设置角色规则，创建完成后将跳回设置页面</li>
+<li>选择“自定义角色规则”时，系统将自动为用户创建角色，并跳转到角色设置页面。</li>
+<li><p>角色设置页面交互：从预约设置页面进入角色设置页面时，需要带上参数，角色设置页面判断参数并引导设置展商/买家角色规则，设置完成后引导返回“预约系统设置”</p></li>
+</ol>
+
+<ul>
+<li><p>在未初始化预约系统时，预约系统中的其他设置都无法使用（禁用）<br/>
+<img src="media/15051093064016/15052031121565.jpg" alt=""/>￼</p></li>
+<li><p>角色设置页面引导<br/>
+<img src="media/15051093064016/15052063182458.jpg" alt=""/>￼</p></li>
+</ul>
+
+<h5 id="toc_10">2.2.1.2 增加两种固定的角色</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>单会参会人角色中增加两种固定的角色类型：展商和买家，这两种角色类型仅用于实现预约系统中的特殊业务逻辑。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>在未初始化预约系统时，单会系统中不存在这两种角色，且这两种角色无法手动创建，必须通过初始化预约系统进行创建</li>
+<li>这两种角色可以在创建成功后修改其名称，但并不影响实际使用，由于预约系统中将会使用这两个角色名称，所以修改名称会影响前台显示</li>
+</ol>
+
+<h5 id="toc_11">2.2.1.3 预约系统基础设置</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>基础设置主要包括是否开启预约系统，以及设置三个不同阶段的起止时间</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>开启/关闭预约系统仅控制展商和买家在个人中心中是否能够看到预约系统的菜单，不涉及任何预约数据的变动</li>
+<li>预约系统初始化完成后，默认处于开启状态</li>
+<li>三个阶段的起止时间只需要精确到分钟</li>
+<li>PSA阶段开始时间没有任何限制，可以选择任何时间；结束时间必须晚于开始时间，且与OD阶段的开始时间必须间隔2小时以上，即结束时间必于早于OD阶段开始时间减去2小时，当OD阶段开始时间为空时，PSA阶段则没有任何限制。</li>
+<li>OD阶段开始时间必于晚于PSA阶段结束时间2小时后，OD阶段结束时间必须早于或等于BMS开始时间。</li>
+<li>BMS阶段开始时间默认为会议开始时间，结束时间默认为会议结束时间，BMS开始时间不能早于OD结束时间。</li>
+<li>修改BMS阶段的开始和结束时间时，如果“场次/时间”尚未设置，则需要同步更新“场次/时间”设置中的开始和结束日期。</li>
+</ol>
+
+<h5 id="toc_12">2.2.1.4 编辑首页提示信息</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>首页提示信息显示在预约系统的首页，主要是文本内容</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>首页提示信息分为中文和英文信息</li>
+<li>中文信息为必填，英文信息为选填</li>
+<li><p>中文和英文需要提供默认文案</p></li>
+</ol>
+
+<ul>
+<li>默认文案(待翻译)：</li>
+</ul>
+
+<blockquote>
+<p><strong>1) PSA Appointment Schedule</strong><br/>
+If you have participated in our Pre-Scheduled Appointment (PSA) exercise, your PSA appointment preferences have been matched.<br/>
+You can click on the &quot;My Appointments&quot; tab to view your appointment schedule.<br/>
+The exhibitors&#39; and buyers&#39; PSA selections have been matched using our computerised matching system according to the following order:<br/>
+(1) Perfect Matches: Both Exhibitor and Buyer have requested to meet each other (2) Buyer&#39;s Preference: Buyer has requested to meet the Exhibitor<br/>
+(3) Exhibitor&#39;s Preference: Exhibitor has requested to meet the Buyer<br/>
+Up to 60% of your appointment slots are pre-scheduled in the above manner.</p>
+
+<p><strong>2) Using The Online Diary</strong><br/>
+You can use the Online Diary to fill up your remaining appointment slots by arranging additional appointments directly with the Buyers.<br/>
+Simply click on the &quot;Make Appointment&quot; tab to search for the additional buyers you would like to meet and request an appointment by selecting a free time slot in the buyer’s schedule. Please take note that you can only make a maximum of 3 cancellations once the appointment has been CONFIRMED (whether matched during PSA or Online Diary Stage). Unlimited cancellations can still occur for PENDING appointments from buyers or suppliers.<br/>
+At the same time, you can use the Online Diary to answer appointment requests from buyers. You can view your appointment requests from buyers under the &quot;My Appointments&quot; tab. The number in the &quot;My Appointments (#)&quot; tab reflects the number of new appointment requests which are awaiting your acceptance.<br/>
+Please note that all appointment request(s) will be automatically cancelled if you are not able to respond within 72 hours. Please ensure that you log in regularly to the Online Diary to view and answer appointment requests from buyers.<br/>
+Under the &quot;My Message&quot; tab, you can view and send messages to the buyers. This gives you the opportunity to communicate with the buyers prior to IT&amp;CM China 2016.<br/>
+Exhibitors can rate buyers by accessing the &quot;Rate Buyers&quot; tab. This will allow us to ensure the quality of the show by providing you with quality buyers. This function will open at the end of the event, and close by 30th June 2016.</p>
+
+<p><strong>3) On-site Appointment Scheduling Session</strong><br/>
+There will be a Buyers-Meet-Sellers (BMS) on-site appointment scheduling session on 7 April 2016, 0930 – 1000hrs<br/>
+The session will offer both exhibitors and buyers the flexibility of making appointments with the other party whom they wish to meet at the last minute or whom they were not successfully matched.</p>
+</blockquote>
+
+<h5 id="toc_13">2.2.1.5 设置场次/时间</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>场次/时间设置主要设置现场约谈的起止日期，每天的开始和结束时间以及每场约谈的时长，并能过这些设置计算出每天的约谈场次时间段。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>现场约谈默认开始时间为会议开始时间，默认结束日期为会议结束时间。</li>
+<li>修改BMS阶段的开始和结束时间时，如果“场次/时间”尚未设置，则需要同步更新“场次/时间”设置中的开始和结束日期。</li>
+<li>修改场次/时间中的日期，不会反向影响基础设置中BMS阶段的开始和结束时间。</li>
+<li>“场次/时间”中的开始日期必须晚于或等于OD阶段的结束日期。</li>
+<li>现场约谈日期确定后，下方自动按日期生成每天上午和下午的开关，用户可以自己选择是否开启或关闭某个时间段。</li>
+<li>默认上午开始时间为09:00，上午结束时间为12:00；下午开始时间为13:00，下午结束时间为18:00。</li>
+<li>上午的开始时间和结束时间不得晚于12:00，且上午结束时间不得早于上午的开始时间。</li>
+<li>下午开始时间不得早于上午的结束时间，下午结束时间不得早于下午的开始时间，下午结束时间不得晚于每天的00:00</li>
+<li>“启用午餐时间”：默认开启，启用午餐时间后，会将上午结束时间到下午开始时间之间的时间也设置为一个时间段，可针对该时间段开放预约。</li>
+<li>启用午餐时间时，如果某一天的上午或下午被禁用，则不生成该天的午餐时间段。</li>
+<li>每场约谈时长默认为20分钟，限制为大于0的正整数。</li>
+<li>点击“开始设置”，按上述设置生成约谈时间段。</li>
+</ol>
+
+<h5 id="toc_14">2.2.1.6 设置PSA阶段匹配优先规则</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>使用该设置可以确定在PSA阶段结束后，系统自动匹配的规则。</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>完美匹配永远排在第一位，无法更改其匹配顺序</li>
+<li>如果选择了买家优先，则在完美匹配后优先匹配买家选择了展商的预约数据</li>
+<li><p>如果选择了展商优先，则在完美匹配后优先匹配展商选择了买家的预约数据</p></li>
+</ol>
+
+<ul>
+<li>匹配算法</li>
+</ul>
+
+<h5 id="toc_15">2.2.1.7 互动设置</h5>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+</div></body>
+
+</html>
