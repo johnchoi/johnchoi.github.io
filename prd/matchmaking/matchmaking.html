@@ -863,6 +863,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.1</td>
 <td>2017/9/19</td>
 </tr>
+<tr>
+<td>MM-PRD</td>
+<td>周勤</td>
+<td>V1.0.2</td>
+<td>2017/9/25</td>
+</tr>
 </tbody>
 </table>
 
@@ -897,6 +903,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td><a href="#toc_21">2.2.2.13</a></td>
 <td>修订</td>
 <td>2017/9/19</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>3</td>
+<td>V1.0.2</td>
+<td><a href="#toc_23">2.2.2.15</a><br><a href="#toc_19">2.2.1.11</a><br><a href="#toc_20">2.2.1.12</a><br><a href="#toc_16">2.2.1.8</a><br><a href="#toc_15">2.2.1.7</a><br><a href="#toc_29">补充</a><br><a href="#toc_13">2.2.1.5</a></td>
+<td>修订</td>
+<td>2017/9/25</td>
 <td>周勤</td>
 </tr>
 </tbody>
@@ -995,6 +1009,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <a href="#toc_28">2.2.1.20 预约：所有买家</a>
 </li>
 </ul>
+</li>
+<li>
+<a href="#toc_29">2.2.2 补充</a>
 </li>
 </ul>
 </li>
@@ -1425,6 +1442,7 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 <li>启用午餐时间时，如果某一天的上午或下午被禁用，则不生成该天的午餐时间段。</li>
 <li>每场约谈时长默认为20分钟，限制为大于0的正整数。</li>
 <li>点击“开始设置”，按上述设置生成约谈时间段。</li>
+<li>BMS阶段的开始和结束时间，均按“场次/时间”中设置的时间取，不管前面阶段设置中的时间 <strong>V1.0.2新增</strong></li>
 </ol>
 
 <h5 id="toc_14">2.2.1.6 设置PSA阶段匹配优先规则</h5>
@@ -1462,6 +1480,7 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 <li>开启互动消息：默认开启，开启后展商和买家可以互相发送消息</li>
 <li>展商字段显示设置：设置买家能够查看展商的哪些字段信息，多选下拉菜单，默认显示全部</li>
 <li>买家字段显示设置：同展商字段显示设置</li>
+<li>展商和买家字段都是报名的时候填写的信息，需要从单会这边获取数据 <strong>V1.0.2新增</strong></li>
 </ol>
 
 <h5 id="toc_16">2.2.1.8 消息系统</h5>
@@ -1490,8 +1509,10 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 <li>发送消息页面中，可以选择向多个对象发送消息，在输入框中进行输入时需要在近期联系人中进行搜索，显示自动完成框</li>
 <li>点击添加收件人是，可以在展商或者买家中选择收件人，同时勾选展商和买家时，则是发送给所有人。</li>
 <li>收件人中需要有两个组：展商和买家，当所有展商都被选中时，就显示“展商”，买家也一样</li>
-<li>在添加收件人的窗口中，可以使用搜索功能搜索展商或买家，搜索字段：姓名和公司名称</li>
+<li>在添加收件人的窗口中，搜索功能集成到输入框中，按照下方的自动完成功能开发 <strong>V1.0.2修订</strong></li>
 <li>发消息时的“系统消息”默认勾选，勾选了系统消息后的发出的消息，将带有“系统消息”的标签</li>
+<li>当后台“互动消息”中关闭了发送消息后，买家和卖家后台将无法发送消息，需要隐藏“发消息”功能，包括消息系统中本身带有的发送消息和搜索到预约对象后的送消息功能。<strong>V1.0.2新增</strong></li>
+<li>涉及到发消息的页面有：《我的预约》《收到的预约请求》《发出的预约请求》《拒绝的预约请求》《被拒绝的预约请求》《选择了我的买家》《所有买家》《查看预约日程表》<strong>V1.0.2新增</strong></li>
 </ol>
 
 <p><strong>注：查看消息TAB暂时先不做</strong></p>
@@ -1548,6 +1569,7 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 
 <ol>
 <li>点击“编辑”时，跳到单会的编辑信息页面</li>
+<li>去掉字段的分组显示，仅按表单顺序显示即可 <strong>V1.0.2新增</strong></li>
 </ol>
 
 <h5 id="toc_20">2.2.1.12 展前预约：选择预约对象</h5>
@@ -1563,12 +1585,14 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 </ul>
 
 <ol>
-<li>需选择预约对象数量设置为与后台生成的“场次/时间”时间段数量一样，如后台生成24个场次，则需要选择的预约对象数量则为24个</li>
-<li>点击选择预约对象后，进入搜索页面，可以按照公司或联系人关键字和所在国家搜索预约对象，展商仅能搜出买家，买家仅能搜出展商</li>
+<li>需选择预约对象数量设置为与后台生成的“场次/时间”时间段数量一样，如后台生成24个场次，则需要选择的预约对象数量则为24个 <strong>V1.0.2修订，没有最多和最少选择数量了</strong></li>
 <li>国家为多选下拉菜单，可以选择多个国家</li>
-<li>点击“重置”会重置搜索条件，并刷新下方列表</li>
+<li><del>点击“重置”会重置搜索条件，并刷新下方列表</del> <strong>V1.0.2 删除</strong></li>
 <li>在预约对象列表中可以查看预约对象的信息</li>
 <li>点击预约则将预约对象放置到右侧预约名单中，不实时保存，点击提交时才会保存</li>
+<li>“展前预约”菜单在PSA阶段结束后，将不再显示在菜单列表中 <strong>V1.0.2新增</strong></li>
+<li>在“展前预约”阶段，展商仅能搜索到买家的信息，买家仅能搜索到展商的信息 <strong>V1.0.2新增</strong></li>
+<li>左侧的预约对象列表中，如果某条记录被添加到已选择列表中，需要高亮显示 <strong>V1.0.2新增（需补设计稿）</strong></li>
 </ol>
 
 <h5 id="toc_21">2.2.1.13 展前预约：系统根据选择结果自动匹配</h5>
@@ -1626,7 +1650,8 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 <li>操作：发送消息，将当前的公司信息带到发送信息页面作为收件人</li>
 <li>操作：取消预约，仅能取消PSA阶段自动匹配成功的预约，在线互动阶段手动匹配的预约无法取消（禁用）</li>
 <li>如果取消预约数量已达上线，则禁用所有取消按钮</li>
-<li>空床的时间段需要标记为空闲</li>
+<li>空闲的时间段需要标记为空闲</li>
+<li>当日程表中某一个时间段为空闲时，操作列为空，不再显示“预约”操作 <strong>V1.0.2新增</strong></li>
 </ol>
 
 <h5 id="toc_24">2.2.1.16 我的预约：收到的预约请求</h5>
@@ -1715,6 +1740,12 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 <ol>
 <li>点击所有买家，则进入所有买家的列表，可以使用公司、联系人关键字和国家进行搜索预约对象</li>
 <li>预约操作与“选择了我的买家/展商”一样</li>
+</ol>
+
+<h4 id="toc_29">2.2.2 补充</h4>
+
+<ol>
+<li>时间格式统一用  2017/09/15 09:00-09:20 </li>
 </ol>
 
 </div></body>
