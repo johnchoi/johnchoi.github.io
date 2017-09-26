@@ -894,15 +894,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.0</td>
 <td></td>
 <td>创建</td>
-<td>2017/9/11</td>
+<td></td>
 <td>周勤</td>
 </tr>
 <tr>
 <td>2</td>
 <td>V1.0.1</td>
 <td><a href="#toc_21">2.2.2.13</a></td>
-<td>修订</td>
-<td>2017/9/19</td>
+<td>新增</td>
+<td>新增展前预约匹配规则说明</td>
 <td>周勤</td>
 </tr>
 <tr>
@@ -910,7 +910,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.2</td>
 <td><a href="#toc_23">2.2.2.15</a><br><a href="#toc_19">2.2.1.11</a><br><a href="#toc_20">2.2.1.12</a><br><a href="#toc_16">2.2.1.8</a><br><a href="#toc_15">2.2.1.7</a><br><a href="#toc_29">补充</a><br><a href="#toc_13">2.2.1.5</a></td>
 <td>修订</td>
-<td>2017/9/25</td>
+<td>修订部分内容，请查看修订章节</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>4</td>
+<td>V1.0.3</td>
+<td><a href="#toc_30">单会组对接工作内容</a><br><a href="#toc_31">附件：流程图和脑图</a></td>
+<td>新增</td>
+<td>新增单会组需要处理的功能</td>
 <td>周勤</td>
 </tr>
 </tbody>
@@ -1012,6 +1020,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </li>
 <li>
 <a href="#toc_29">2.2.2 补充</a>
+</li>
+<li>
+<a href="#toc_30">2.2.3 单会组对接工作内容</a>
+</li>
+<li>
+<a href="#toc_31">2.2.4 附件（流程图和脑图）</a>
 </li>
 </ul>
 </li>
@@ -1747,6 +1761,35 @@ The session will offer both exhibitors and buyers the flexibility of making appo
 <ol>
 <li>时间格式统一用  2017/09/15 09:00-09:20 </li>
 </ol>
+
+<h4 id="toc_30">2.2.3 单会组对接工作内容</h4>
+
+<ol>
+<li>增加两种固定的角色：展商/买家</li>
+<li>使用通道定义展商/买家角色规则：提供创建通道以及创建展商/买家两种角色的接口，供PSA系统调用，创建的通道名称为“展商通道”和“买家通道”，创建的角色为“展商”和“买家”，通道和角色创建好后，需要自动设置角色规则，用通道作为判断角色的规则</li>
+<li>自定义角色规则：提供创建角色的接口，供PSA系统调用，创建的角色为“展商”和“买家”，角色创建好后，引导用户前往角色设置页面设置角色规则</li>
+<li>从PSA进入角色设置页面需要带上来源参数，页面需要按照“设置展商角色规则” =&gt; “设置买家色规则” =&gt; 返回预约系统的顺序引导用户将角色规则创建完成</li>
+<li>“互动设置”提供展商和买家通道中的字段接口，供PSA系统设置哪些字段可显示，哪些字段不可显示</li>
+<li>“消息系统”中，需要提供查询参会人（收件人）的接口</li>
+<li>绘制会场平面图中，需要提供展商信息查询，在保存时，提供保存展位信息的接口，需要增加一个展位信息字段</li>
+<li>简介：需要提供查看参会人信息，以及编辑参会人的链接（个人中心）</li>
+<li>展前预约阶段，提供双方互相查询对方列表的功能</li>
+</ol>
+
+<h4 id="toc_31">2.2.4 附件（流程图和脑图）</h4>
+
+<ul>
+<li>PSA系统需求解析</li>
+</ul>
+
+<p><img src="media/15051093064016/Match%20Making.jpg" alt="Match Making"/>￼</p>
+
+<ul>
+<li><p>流程图<br/>
+<img src="media/15051093064016/PSA%E5%B1%95%E5%89%8D%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F.png" alt="PSA展前预约系统"/>￼</p></li>
+<li><p>产品规划脑图<br/>
+<img src="media/15051093064016/PSA.jpg" alt="PSA"/>￼</p></li>
+</ul>
 
 </div></body>
 
