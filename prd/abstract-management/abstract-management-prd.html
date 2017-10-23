@@ -911,6 +911,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.9</td>
 <td>2017/9/28</td>
 </tr>
+<tr>
+<td>AM-PRD</td>
+<td>周勤</td>
+<td>V1.0.10</td>
+<td>2017/10/23</td>
+</tr>
 </tbody>
 </table>
 
@@ -1008,7 +1014,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>V1.0.9</td>
 <td></td>
 <td>新增</td>
+<td>1. 新增自定义字段功能；<br>2.新增征文展示；<br>3.新增征文学科分类模板功能</td>
+<td>周勤</td>
+</tr>
+<tr>
+<td>11</td>
+<td>V1.0.10</td>
 <td></td>
+<td>新增</td>
+<td>1. 新增可提交多篇征文功能；<br>2. 新增控制征文作者是否必须填写功能</td>
 <td>周勤</td>
 </tr>
 </tbody>
@@ -1258,6 +1272,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </li>
 <li>
 <a href="#toc_73">4.3.9 征文评审增加自定义字段</a>
+</li>
+<li>
+<a href="#toc_74">4.3.10 可提交多篇征文设置 <strong>V1.0.10新增</strong></a>
+</li>
+<li>
+<a href="#toc_75">4.3.11 控制作者信息提交设置 <strong>V1.0.10新增</strong></a>
 </li>
 </ul>
 </li>
@@ -2713,6 +2733,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td><strong>V1.0.9新增</strong></td>
 </tr>
 <tr>
+<td></td>
+<td>可提交多篇征文设置</td>
+<td>P1</td>
+<td><strong>V1.0.10新增</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>控制作者信息提交设置</td>
+<td>P1</td>
+<td><strong>V1.0.10新增</strong></td>
+</tr>
+<tr>
 <td>2. 征文评审设置</td>
 <td></td>
 <td></td>
@@ -2753,6 +2785,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <td>摘要全文提交新增zip格式</td>
 <td>P1</td>
 <td><strong>V1.0.9新增</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>增加“继续提交”按钮</td>
+<td>P1</td>
+<td><strong>V1.0.10新增</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>根据后台设置控制作者信息提交</td>
+<td>P1</td>
+<td><strong>V1.0.10新增</strong></td>
 </tr>
 <tr>
 <td>4. 摘要后台管理</td>
@@ -2971,6 +3015,48 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>上传文件字段类型需要提供单个下载</li>
 <li>需要按后台设置展示</li>
 </ol>
+
+<h4 id="toc_74">4.3.10 可提交多篇征文设置 <strong>V1.0.10新增</strong></h4>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>后台增加可提交多篇征文的设置，该设置项控制作者是否能够在同一个会议提提交多篇征文</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认不开启</li>
+<li>开启后，提交征文列表上显示“继续提交”按钮，否则则不显示“继续提交按钮”</li>
+</ol>
+
+<h4 id="toc_75">4.3.11 控制作者信息提交设置 <strong>V1.0.10新增</strong></h4>
+
+<ul>
+<li>简要说明</li>
+</ul>
+
+<p>后台增加控制作者信息提交的设置，该设置项控制是否需要提交某种作者类型，如第一作者、通讯作者和共同作者</p>
+
+<ul>
+<li><p>业务规则</p></li>
+</ul>
+
+<ol>
+<li>默认所有的作者类型都开启</li>
+<li>可以允许全部都不开启，全部都不开启时则不需要再填写任何作者信息</li>
+<li>第一作者、通讯作者被关闭后，在提交时不显示相关的提交表单模块</li>
+<li>共同作者被关闭后则不显示“增加共同作者”的按钮</li>
+</ol>
+
+<p><strong>V1.0.10后台设置</strong><br/>
+<img src="media/14964703791779/15087263110572.jpg" alt=""/>￼</p>
+
+<p><strong>V1.0.10提交多篇征文</strong><br/>
+<img src="media/14964703791779/15087263355305.jpg" alt=""/>￼</p>
 
 </div></body>
 
